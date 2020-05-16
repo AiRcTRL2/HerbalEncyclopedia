@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */; };
+		3291266737EE3253E7E0AC4B8BCB5491 /* Pods-Herbal Encyclopedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CC5341C6302390A574FDAE5E8A4AD2 /* Pods-Herbal Encyclopedia-dummy.m */; };
+		40CC9333166E64627E6142DEBF355913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4788A9958F6D52B2B3DC4CFAA827B406 /* Pods-Herbal Encyclopedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A24F74C9A7FF12A60D5E5782210CEEC /* Pods-Herbal Encyclopedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		503B3859A8A97B71AC2635E419D250D2 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9CABEB43D2C2F1F2C4DCAB5DD7E405 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */; };
+		84043D565317A4008E40F60479DFB017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8660F8BAF83F62F7F43F0607433E826E /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7D42214C5DAE3AD02EDED3CF280EC /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-dummy.m */; };
+		BE927F117957660520DA3ECFA470E77C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F28C9CE6A72047A41212CE2936DACE3F /* Pods-Herbal EncyclopediaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFDD84F60143ACB3C5CC3B9A1E12DF1 /* Pods-Herbal EncyclopediaTests-dummy.m */; };
+		F7E8AC589F792AEA2A8175BEACFD6A70 /* Pods-Herbal EncyclopediaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0FFEE53387D985540C13C2600FC2D5 /* Pods-Herbal EncyclopediaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0017DBA4DAF2E0B00166D06A3FE6630D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82ABDC97BA1F8DCDC5A73772901B6B48;
+			remoteInfo = "Pods-Herbal Encyclopedia";
+		};
+		37179C53A43C33BF19E9366CC2138149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		82A4CC1B8256A255C9807AEE5DF51125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05EB2E221DD60B8EFCF51F6CEE4D84ED /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		2B7B5C2D86F66479E35428D6F1C9C892 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFDD84F60143ACB3C5CC3B9A1E12DF1 /* Pods-Herbal EncyclopediaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Herbal EncyclopediaTests-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F99C730630B06C0F91FA3094F1381E4 /* Pods-Herbal Encyclopedia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Herbal Encyclopedia-frameworks.sh"; sourceTree = "<group>"; };
+		4A0FFEE53387D985540C13C2600FC2D5 /* Pods-Herbal EncyclopediaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Herbal EncyclopediaTests-umbrella.h"; sourceTree = "<group>"; };
+		4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		571603CA3E54B6CD8547FC7AAB992E07 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		5FD7D42214C5DAE3AD02EDED3CF280EC /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-dummy.m"; sourceTree = "<group>"; };
+		651FF8F3478241EFDBD0F4575F24CB7E /* Pods_Herbal_EncyclopediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Herbal_EncyclopediaTests.framework; path = "Pods-Herbal EncyclopediaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D0E2826E71A10B4FA4461DEB3F0FB1 /* Pods-Herbal EncyclopediaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Herbal EncyclopediaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A24F74C9A7FF12A60D5E5782210CEEC /* Pods-Herbal Encyclopedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Herbal Encyclopedia-umbrella.h"; sourceTree = "<group>"; };
+		8BE6C175B19F71131A95B5605A16A257 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B733388F39C3A559E1D5259B9D74BD /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2C86DBB6F107CA617326C10D72C237C /* Pods-Herbal EncyclopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Herbal EncyclopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A74C61626B8723BF5D0DDC171F560E8D /* Pods-Herbal EncyclopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Herbal EncyclopediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		B17FE80825EACF2E353A1F4CA5637BCB /* Pods-Herbal EncyclopediaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Herbal EncyclopediaTests.modulemap"; sourceTree = "<group>"; };
+		B9D37F30C45F7A074E2ED9563428486B /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BF9CABEB43D2C2F1F2C4DCAB5DD7E405 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-umbrella.h"; sourceTree = "<group>"; };
+		C8CC5341C6302390A574FDAE5E8A4AD2 /* Pods-Herbal Encyclopedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Herbal Encyclopedia-dummy.m"; sourceTree = "<group>"; };
+		C9B05323DE2593B3DDD425C79D07479D /* Pods-Herbal Encyclopedia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Herbal Encyclopedia-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC8799F01770B42BDB0899EE2599E02C /* Pods-Herbal Encyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Herbal Encyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7B7706C82CD7AC69E4D49D79961905 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-Info.plist"; sourceTree = "<group>"; };
+		CF9A820014BEB892FFB8227AE7885CB0 /* Pods-Herbal EncyclopediaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Herbal EncyclopediaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D13FAD3FA7E5585DD22B3E99C226D2A7 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D423A32390E87BA84AB44C0F13AB0547 /* Pods-Herbal Encyclopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Herbal Encyclopedia.release.xcconfig"; sourceTree = "<group>"; };
+		DAAB4C2FA36346BD7497E01FDC2F6169 /* Pods-Herbal Encyclopedia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Herbal Encyclopedia-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFF8746F627EB0869FA15D5105663C42 /* Pods-Herbal EncyclopediaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Herbal EncyclopediaTests-Info.plist"; sourceTree = "<group>"; };
+		E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		E7E869423EBEFAE5EAE0093C7BF2B6A0 /* Pods_Herbal_Encyclopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Herbal_Encyclopedia.framework; path = "Pods-Herbal Encyclopedia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8473499E91B2D5B0E8BEDA4FEFA70CC /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		E9EA20259A5D65A18B3464A25BBBBC6C /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.modulemap"; sourceTree = "<group>"; };
+		ED6C60826ED494D9238C5B72387BBAA2 /* Pods-Herbal Encyclopedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Herbal Encyclopedia.modulemap"; sourceTree = "<group>"; };
+		F88E14E5F64EC8AD7E2393D802B9385C /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC61F36CB9D5CF76730EEAF403D6F230 /* Pods-Herbal Encyclopedia-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Herbal Encyclopedia-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A5BDF34B809CA0777B1EF0AD7848C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CC9333166E64627E6142DEBF355913 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE00D21318C348AA265AA2E56A62E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84043D565317A4008E40F60479DFB017 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB54471C23CD0C6F174FA27EA5B803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE927F117957660520DA3ECFA470E77C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C6A71D462ED46C2A7F74D962134DC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36AB58DCE8747D206B69D48084D7CBB2 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36AB58DCE8747D206B69D48084D7CBB2 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */,
+				FF2248F76C1F51163F78F4C1DED1A044 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		3E7548E1A530F4D507DB00E4AF180122 /* Pods-Herbal EncyclopediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17FE80825EACF2E353A1F4CA5637BCB /* Pods-Herbal EncyclopediaTests.modulemap */,
+				75D0E2826E71A10B4FA4461DEB3F0FB1 /* Pods-Herbal EncyclopediaTests-acknowledgements.markdown */,
+				CF9A820014BEB892FFB8227AE7885CB0 /* Pods-Herbal EncyclopediaTests-acknowledgements.plist */,
+				2EFDD84F60143ACB3C5CC3B9A1E12DF1 /* Pods-Herbal EncyclopediaTests-dummy.m */,
+				DFF8746F627EB0869FA15D5105663C42 /* Pods-Herbal EncyclopediaTests-Info.plist */,
+				4A0FFEE53387D985540C13C2600FC2D5 /* Pods-Herbal EncyclopediaTests-umbrella.h */,
+				A2C86DBB6F107CA617326C10D72C237C /* Pods-Herbal EncyclopediaTests.debug.xcconfig */,
+				A74C61626B8723BF5D0DDC171F560E8D /* Pods-Herbal EncyclopediaTests.release.xcconfig */,
+			);
+			name = "Pods-Herbal EncyclopediaTests";
+			path = "Target Support Files/Pods-Herbal EncyclopediaTests";
+			sourceTree = "<group>";
+		};
+		5FAF028CF80496EB36D0A7AA379CE21A /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA20259A5D65A18B3464A25BBBBC6C /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.modulemap */,
+				A0B733388F39C3A559E1D5259B9D74BD /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-acknowledgements.markdown */,
+				D13FAD3FA7E5585DD22B3E99C226D2A7 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-acknowledgements.plist */,
+				5FD7D42214C5DAE3AD02EDED3CF280EC /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-dummy.m */,
+				B9D37F30C45F7A074E2ED9563428486B /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-frameworks.sh */,
+				CD7B7706C82CD7AC69E4D49D79961905 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-Info.plist */,
+				BF9CABEB43D2C2F1F2C4DCAB5DD7E405 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-umbrella.h */,
+				8BE6C175B19F71131A95B5605A16A257 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig */,
+				F88E14E5F64EC8AD7E2393D802B9385C /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */,
+			);
+			name = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests";
+			path = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests";
+			sourceTree = "<group>";
+		};
+		80C680B20D12C508812A25DEFA1F225B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7E869423EBEFAE5EAE0093C7BF2B6A0 /* Pods_Herbal_Encyclopedia.framework */,
+				2B7B5C2D86F66479E35428D6F1C9C892 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */,
+				651FF8F3478241EFDBD0F4575F24CB7E /* Pods_Herbal_EncyclopediaTests.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2C6A71D462ED46C2A7F74D962134DC74 /* Pods */,
+				80C680B20D12C508812A25DEFA1F225B /* Products */,
+				D031F7EC3F948432D5F4FB9DF73E0A83 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D031F7EC3F948432D5F4FB9DF73E0A83 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBF40516CA2F14BA124E1E1633506E5 /* Pods-Herbal Encyclopedia */,
+				5FAF028CF80496EB36D0A7AA379CE21A /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests */,
+				3E7548E1A530F4D507DB00E4AF180122 /* Pods-Herbal EncyclopediaTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEBF40516CA2F14BA124E1E1633506E5 /* Pods-Herbal Encyclopedia */ = {
+			isa = PBXGroup;
+			children = (
+				ED6C60826ED494D9238C5B72387BBAA2 /* Pods-Herbal Encyclopedia.modulemap */,
+				C9B05323DE2593B3DDD425C79D07479D /* Pods-Herbal Encyclopedia-acknowledgements.markdown */,
+				DAAB4C2FA36346BD7497E01FDC2F6169 /* Pods-Herbal Encyclopedia-acknowledgements.plist */,
+				C8CC5341C6302390A574FDAE5E8A4AD2 /* Pods-Herbal Encyclopedia-dummy.m */,
+				3F99C730630B06C0F91FA3094F1381E4 /* Pods-Herbal Encyclopedia-frameworks.sh */,
+				FC61F36CB9D5CF76730EEAF403D6F230 /* Pods-Herbal Encyclopedia-Info.plist */,
+				8A24F74C9A7FF12A60D5E5782210CEEC /* Pods-Herbal Encyclopedia-umbrella.h */,
+				CC8799F01770B42BDB0899EE2599E02C /* Pods-Herbal Encyclopedia.debug.xcconfig */,
+				D423A32390E87BA84AB44C0F13AB0547 /* Pods-Herbal Encyclopedia.release.xcconfig */,
+			);
+			name = "Pods-Herbal Encyclopedia";
+			path = "Target Support Files/Pods-Herbal Encyclopedia";
+			sourceTree = "<group>";
+		};
+		FF2248F76C1F51163F78F4C1DED1A044 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05EB2E221DD60B8EFCF51F6CEE4D84ED /* SwiftyJSON.modulemap */,
+				E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */,
+				E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */,
+				E8473499E91B2D5B0E8BEDA4FEFA70CC /* SwiftyJSON-Info.plist */,
+				571603CA3E54B6CD8547FC7AAB992E07 /* SwiftyJSON-prefix.pch */,
+				4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FE6C0AECED5BCFB232FD84645457D59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4788A9958F6D52B2B3DC4CFAA827B406 /* Pods-Herbal Encyclopedia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DE3DFB56936FD304BB58B8E5409D78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503B3859A8A97B71AC2635E419D250D2 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F685CC46B0B5AD848C1502020C61EEC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E8AC589F792AEA2A8175BEACFD6A70 /* Pods-Herbal EncyclopediaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		013023825AB376FB78632BD375F49337 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6E0C6CC5B587EF42364AAA57076577 /* Build configuration list for PBXNativeTarget "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests" */;
+			buildPhases = (
+				F1DE3DFB56936FD304BB58B8E5409D78 /* Headers */,
+				4479333795167F0E538883EEFA79C0C7 /* Sources */,
+				6CE00D21318C348AA265AA2E56A62E66 /* Frameworks */,
+				D3CF00078220CF491E66B33616853171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0099297F68D23ED8F5E41D17C6E8A2A /* PBXTargetDependency */,
+			);
+			name = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests";
+			productName = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests";
+			productReference = 2B7B5C2D86F66479E35428D6F1C9C892 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82ABDC97BA1F8DCDC5A73772901B6B48 /* Pods-Herbal Encyclopedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170B8AB530357DA6F9C834E9E9358AE9 /* Build configuration list for PBXNativeTarget "Pods-Herbal Encyclopedia" */;
+			buildPhases = (
+				0FE6C0AECED5BCFB232FD84645457D59 /* Headers */,
+				30A7C4693B98EB96B8FE78F01A89567C /* Sources */,
+				98CB54471C23CD0C6F174FA27EA5B803 /* Frameworks */,
+				62F3DB6946B28816C175A61F04B758E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AB3A0A914140D3C13BE6F8E7959FA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Herbal Encyclopedia";
+			productName = "Pods-Herbal Encyclopedia";
+			productReference = E7E869423EBEFAE5EAE0093C7BF2B6A0 /* Pods_Herbal_Encyclopedia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8F0F727E0E06A8CE33E040526B5B613 /* Pods-Herbal EncyclopediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95445DFE1BAF1E071D401B9A3977B94 /* Build configuration list for PBXNativeTarget "Pods-Herbal EncyclopediaTests" */;
+			buildPhases = (
+				F685CC46B0B5AD848C1502020C61EEC9 /* Headers */,
+				895D6640DBFC7AAC16D65EC64DCEFB02 /* Sources */,
+				40A5BDF34B809CA0777B1EF0AD7848C9 /* Frameworks */,
+				BA4117631A4A3B1E31F31AD50DEF70CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEEA80D15BF45190823E0CB23521EE50 /* PBXTargetDependency */,
+			);
+			name = "Pods-Herbal EncyclopediaTests";
+			productName = "Pods-Herbal EncyclopediaTests";
+			productReference = 651FF8F3478241EFDBD0F4575F24CB7E /* Pods_Herbal_EncyclopediaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */,
+				1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */,
+				AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */,
+				D098F7F0080A87A1F472C81FC2F85528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 80C680B20D12C508812A25DEFA1F225B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82ABDC97BA1F8DCDC5A73772901B6B48 /* Pods-Herbal Encyclopedia */,
+				013023825AB376FB78632BD375F49337 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests */,
+				A8F0F727E0E06A8CE33E040526B5B613 /* Pods-Herbal EncyclopediaTests */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62F3DB6946B28816C175A61F04B758E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4117631A4A3B1E31F31AD50DEF70CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D098F7F0080A87A1F472C81FC2F85528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CF00078220CF491E66B33616853171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
+				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A7C4693B98EB96B8FE78F01A89567C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3291266737EE3253E7E0AC4B8BCB5491 /* Pods-Herbal Encyclopedia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4479333795167F0E538883EEFA79C0C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8660F8BAF83F62F7F43F0607433E826E /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		895D6640DBFC7AAC16D65EC64DCEFB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28C9CE6A72047A41212CE2936DACE3F /* Pods-Herbal EncyclopediaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AB3A0A914140D3C13BE6F8E7959FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 37179C53A43C33BF19E9366CC2138149 /* PBXContainerItemProxy */;
+		};
+		AEEA80D15BF45190823E0CB23521EE50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Herbal Encyclopedia";
+			target = 82ABDC97BA1F8DCDC5A73772901B6B48 /* Pods-Herbal Encyclopedia */;
+			targetProxy = 0017DBA4DAF2E0B00166D06A3FE6630D /* PBXContainerItemProxy */;
+		};
+		E0099297F68D23ED8F5E41D17C6E8A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 82A4CC1B8256A255C9807AEE5DF51125 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		147192866B4704CDE8DC90BA5653BD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C86DBB6F107CA617326C10D72C237C /* Pods-Herbal EncyclopediaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4AB5A6F25602A4BB35622E575DDD138D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8799F01770B42BDB0899EE2599E02C /* Pods-Herbal Encyclopedia.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		88B99E4DB3EB19EFC5AE353614D18A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74C61626B8723BF5D0DDC171F560E8D /* Pods-Herbal EncyclopediaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE384CFFB03C972759200AC98F742373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D423A32390E87BA84AB44C0F13AB0547 /* Pods-Herbal Encyclopedia.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE4F403FF004CE513D35962855F8536D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE6C175B19F71131A95B5605A16A257 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3845B827530B3092165AA6103A6095A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88E14E5F64EC8AD7E2393D802B9385C /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		170B8AB530357DA6F9C834E9E9358AE9 /* Build configuration list for PBXNativeTarget "Pods-Herbal Encyclopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AB5A6F25602A4BB35622E575DDD138D /* Debug */,
+				CE384CFFB03C972759200AC98F742373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6E0C6CC5B587EF42364AAA57076577 /* Build configuration list for PBXNativeTarget "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4F403FF004CE513D35962855F8536D /* Debug */,
+				E3845B827530B3092165AA6103A6095A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */,
+				6E2226BAF771B9AEEA8FE646C18E7879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95445DFE1BAF1E071D401B9A3977B94 /* Build configuration list for PBXNativeTarget "Pods-Herbal EncyclopediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147192866B4704CDE8DC90BA5653BD5F /* Debug */,
+				88B99E4DB3EB19EFC5AE353614D18A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -3,19 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259393CA1D4BB13E52B39018 /* Pods_Herbal_EncyclopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5CE997D600968778516DA7 /* Pods_Herbal_EncyclopediaTests.framework */; };
+		3CF0461899B3AFF6949D9CA5 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5F4D64182CAE96494876A3 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */; };
+		6CBC8CFA4195AA62D6CD03D7 /* Pods_Herbal_Encyclopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F37CE94B45BB87D2D983848 /* Pods_Herbal_Encyclopedia.framework */; };
+		D53542742465CBE0000046EB /* WarningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53542732465CBE0000046EB /* WarningCell.swift */; };
+		D53542762465CC0F000046EB /* WarningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53542752465CC0F000046EB /* WarningCell.xib */; };
+		D53542792465CF31000046EB /* herbs.json in Resources */ = {isa = PBXBuildFile; fileRef = D53542782465CF31000046EB /* herbs.json */; };
+		D535427C2465D7D8000046EB /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535427B2465D7D8000046EB /* Plant.swift */; };
 		D53687C224657C6E00CD7094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C124657C6E00CD7094 /* AppDelegate.swift */; };
 		D53687C424657C6E00CD7094 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C324657C6E00CD7094 /* SceneDelegate.swift */; };
-		D53687C624657C6E00CD7094 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C524657C6E00CD7094 /* FirstViewController.swift */; };
-		D53687C824657C6E00CD7094 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C724657C6E00CD7094 /* SecondViewController.swift */; };
+		D53687C624657C6E00CD7094 /* SpotlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C524657C6E00CD7094 /* SpotlightViewController.swift */; };
+		D53687C824657C6E00CD7094 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C724657C6E00CD7094 /* SearchViewController.swift */; };
 		D53687CB24657C6E00CD7094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53687C924657C6E00CD7094 /* Main.storyboard */; };
 		D53687CD24657C6F00CD7094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53687CC24657C6F00CD7094 /* Assets.xcassets */; };
 		D53687D024657C6F00CD7094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53687CE24657C6F00CD7094 /* LaunchScreen.storyboard */; };
 		D53687DB24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687DA24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift */; };
 		D53687E624657C6F00CD7094 /* Herbal_EncyclopediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687E524657C6F00CD7094 /* Herbal_EncyclopediaUITests.swift */; };
+		D537947624682A3400354021 /* PlantModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D537947524682A3400354021 /* PlantModelTestCase.swift */; };
+		D544005624701D1700C6263B /* PlantInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005524701D1700C6263B /* PlantInformationModel.swift */; };
+		D544005824701D2600C6263B /* GrowthInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005724701D2600C6263B /* GrowthInformationModel.swift */; };
+		D544005A24701D4800C6263B /* PlantUsesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005924701D4800C6263B /* PlantUsesModel.swift */; };
+		D544005C24701D5700C6263B /* PlantScienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005B24701D5700C6263B /* PlantScienceModel.swift */; };
+		D544005E24701D8200C6263B /* BodilyEffectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005D24701D8200C6263B /* BodilyEffectsModel.swift */; };
+		D544006024701D9C00C6263B /* PreparationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005F24701D9C00C6263B /* PreparationsModel.swift */; };
+		D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006224702CA500C6263B /* ViewControllerExtensions.swift */; };
+		D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006424702F0800C6263B /* UIViewExtensions.swift */; };
+		D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F452465861B004A1C30 /* CustomImageView.swift */; };
+		D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +54,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB8575BA1DB04A6D6D672C6 /* Pods-Herbal Encyclopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia.release.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.release.xcconfig"; sourceTree = "<group>"; };
+		3C5CE997D600968778516DA7 /* Pods_Herbal_EncyclopediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Herbal_EncyclopediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5F4D64182CAE96494876A3 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1D453A6D066EC5ABF501AC /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F37CE94B45BB87D2D983848 /* Pods_Herbal_Encyclopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Herbal_Encyclopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3E65D4793E5737A3EF5A8B /* Pods-Herbal EncyclopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal EncyclopediaTests.debug.xcconfig"; path = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		756A5962A02963E6FCD6A40D /* Pods-Herbal EncyclopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal EncyclopediaTests.release.xcconfig"; path = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		99D8E7B111AEC7343C2C0527 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D53542732465CBE0000046EB /* WarningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningCell.swift; sourceTree = "<group>"; };
+		D53542752465CC0F000046EB /* WarningCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarningCell.xib; sourceTree = "<group>"; };
+		D53542782465CF31000046EB /* herbs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = herbs.json; sourceTree = "<group>"; };
+		D535427B2465D7D8000046EB /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		D53687BE24657C6E00CD7094 /* Herbal Encyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Herbal Encyclopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53687C124657C6E00CD7094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53687C324657C6E00CD7094 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D53687C524657C6E00CD7094 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D53687C724657C6E00CD7094 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D53687C524657C6E00CD7094 /* SpotlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewController.swift; sourceTree = "<group>"; };
+		D53687C724657C6E00CD7094 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D53687CA24657C6E00CD7094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D53687CC24657C6F00CD7094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53687CF24657C6F00CD7094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +81,18 @@
 		D53687E124657C6F00CD7094 /* Herbal EncyclopediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Herbal EncyclopediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53687E524657C6F00CD7094 /* Herbal_EncyclopediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Herbal_EncyclopediaUITests.swift; sourceTree = "<group>"; };
 		D53687E724657C6F00CD7094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D537947524682A3400354021 /* PlantModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModelTestCase.swift; sourceTree = "<group>"; };
+		D544005524701D1700C6263B /* PlantInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInformationModel.swift; sourceTree = "<group>"; };
+		D544005724701D2600C6263B /* GrowthInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowthInformationModel.swift; sourceTree = "<group>"; };
+		D544005924701D4800C6263B /* PlantUsesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUsesModel.swift; sourceTree = "<group>"; };
+		D544005B24701D5700C6263B /* PlantScienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantScienceModel.swift; sourceTree = "<group>"; };
+		D544005D24701D8200C6263B /* BodilyEffectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodilyEffectsModel.swift; sourceTree = "<group>"; };
+		D544005F24701D9C00C6263B /* PreparationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationsModel.swift; sourceTree = "<group>"; };
+		D544006224702CA500C6263B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		D544006424702F0800C6263B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D57F0F452465861B004A1C30 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
+		F87C5385821B4F2CD18E8F2E /* Pods-Herbal Encyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBC8CFA4195AA62D6CD03D7 /* Pods_Herbal_Encyclopedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259393CA1D4BB13E52B39018 /* Pods_Herbal_EncyclopediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +116,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF0461899B3AFF6949D9CA5 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5DF963B2CF8A743A12F7EB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F87C5385821B4F2CD18E8F2E /* Pods-Herbal Encyclopedia.debug.xcconfig */,
+				0BB8575BA1DB04A6D6D672C6 /* Pods-Herbal Encyclopedia.release.xcconfig */,
+				5B1D453A6D066EC5ABF501AC /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig */,
+				99D8E7B111AEC7343C2C0527 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */,
+				6C3E65D4793E5737A3EF5A8B /* Pods-Herbal EncyclopediaTests.debug.xcconfig */,
+				756A5962A02963E6FCD6A40D /* Pods-Herbal EncyclopediaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8635A59A3CDA4A8771EA575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F37CE94B45BB87D2D983848 /* Pods_Herbal_Encyclopedia.framework */,
+				4B5F4D64182CAE96494876A3 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */,
+				3C5CE997D600968778516DA7 /* Pods_Herbal_EncyclopediaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D53542712465CBBB000046EB /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D53542722465CBC5000046EB /* TableView Cells */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		D53542722465CBC5000046EB /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D53542732465CBE0000046EB /* WarningCell.swift */,
+				D53542752465CC0F000046EB /* WarningCell.xib */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		D53542772465CEA5000046EB /* JSON Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				D53542782465CF31000046EB /* herbs.json */,
+			);
+			path = "JSON Stubs";
+			sourceTree = "<group>";
+		};
+		D535427A2465D7B5000046EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D535427B2465D7D8000046EB /* Plant.swift */,
+				D544005524701D1700C6263B /* PlantInformationModel.swift */,
+				D544005724701D2600C6263B /* GrowthInformationModel.swift */,
+				D544005924701D4800C6263B /* PlantUsesModel.swift */,
+				D544005B24701D5700C6263B /* PlantScienceModel.swift */,
+				D544005D24701D8200C6263B /* BodilyEffectsModel.swift */,
+				D544005F24701D9C00C6263B /* PreparationsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D53687B524657C6E00CD7094 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +192,8 @@
 				D53687D924657C6F00CD7094 /* Herbal EncyclopediaTests */,
 				D53687E424657C6F00CD7094 /* Herbal EncyclopediaUITests */,
 				D53687BF24657C6E00CD7094 /* Products */,
+				C5DF963B2CF8A743A12F7EB1 /* Pods */,
+				C8635A59A3CDA4A8771EA575 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +210,18 @@
 		D53687C024657C6E00CD7094 /* Herbal Encyclopedia */ = {
 			isa = PBXGroup;
 			children = (
+				D535427A2465D7B5000046EB /* Models */,
+				D53687F52465801100CD7094 /* Storyboards */,
+				D5380CEA24685C150095665A /* View Controllers */,
 				D53687C124657C6E00CD7094 /* AppDelegate.swift */,
 				D53687C324657C6E00CD7094 /* SceneDelegate.swift */,
-				D53687C524657C6E00CD7094 /* FirstViewController.swift */,
-				D53687C724657C6E00CD7094 /* SecondViewController.swift */,
-				D53687C924657C6E00CD7094 /* Main.storyboard */,
 				D53687CC24657C6F00CD7094 /* Assets.xcassets */,
 				D53687CE24657C6F00CD7094 /* LaunchScreen.storyboard */,
 				D53687D124657C6F00CD7094 /* Info.plist */,
+				D57F0F4424658608004A1C30 /* Custom Views */,
+				D53542712465CBBB000046EB /* Custom Cells */,
+				D544006124702C7C00C6263B /* UI Extensions */,
+				D53542772465CEA5000046EB /* JSON Stubs */,
 			);
 			path = "Herbal Encyclopedia";
 			sourceTree = "<group>";
@@ -117,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				D53687DA24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift */,
+				D537947524682A3400354021 /* PlantModelTestCase.swift */,
 				D53687DC24657C6F00CD7094 /* Info.plist */,
 			);
 			path = "Herbal EncyclopediaTests";
@@ -131,6 +245,57 @@
 			path = "Herbal EncyclopediaUITests";
 			sourceTree = "<group>";
 		};
+		D53687F324657F7200CD7094 /* Spotlight */ = {
+			isa = PBXGroup;
+			children = (
+				D53687C524657C6E00CD7094 /* SpotlightViewController.swift */,
+			);
+			path = Spotlight;
+			sourceTree = "<group>";
+		};
+		D53687F424657F7D00CD7094 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D53687C724657C6E00CD7094 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D53687F52465801100CD7094 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D53687C924657C6E00CD7094 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5380CEA24685C150095665A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D53687F424657F7D00CD7094 /* Search */,
+				D53687F324657F7200CD7094 /* Spotlight */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D544006124702C7C00C6263B /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D544006224702CA500C6263B /* ViewControllerExtensions.swift */,
+				D544006424702F0800C6263B /* UIViewExtensions.swift */,
+			);
+			path = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		D57F0F4424658608004A1C30 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				D57F0F452465861B004A1C30 /* CustomImageView.swift */,
+				D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53687EA24657C6F00CD7094 /* Build configuration list for PBXNativeTarget "Herbal Encyclopedia" */;
 			buildPhases = (
+				251BA35A0B6EAEF43C9BABF3 /* [CP] Check Pods Manifest.lock */,
 				D53687BA24657C6E00CD7094 /* Sources */,
 				D53687BB24657C6E00CD7094 /* Frameworks */,
 				D53687BC24657C6E00CD7094 /* Resources */,
+				D59AA2E887AB04E691230116 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53687ED24657C6F00CD7094 /* Build configuration list for PBXNativeTarget "Herbal EncyclopediaTests" */;
 			buildPhases = (
+				566C5A5ED838A3CD232A3447 /* [CP] Check Pods Manifest.lock */,
 				D53687D224657C6F00CD7094 /* Sources */,
 				D53687D324657C6F00CD7094 /* Frameworks */,
 				D53687D424657C6F00CD7094 /* Resources */,
@@ -173,9 +341,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53687F024657C6F00CD7094 /* Build configuration list for PBXNativeTarget "Herbal EncyclopediaUITests" */;
 			buildPhases = (
+				A702561B8DC75872BE13D555 /* [CP] Check Pods Manifest.lock */,
 				D53687DD24657C6F00CD7094 /* Sources */,
 				D53687DE24657C6F00CD7094 /* Frameworks */,
 				D53687DF24657C6F00CD7094 /* Resources */,
+				49B99542A576AE58B5F1E08C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +406,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53687D024657C6F00CD7094 /* LaunchScreen.storyboard in Resources */,
+				D53542792465CF31000046EB /* herbs.json in Resources */,
 				D53687CD24657C6F00CD7094 /* Assets.xcassets in Resources */,
+				D53542762465CC0F000046EB /* WarningCell.xib in Resources */,
 				D53687CB24657C6E00CD7094 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,15 +429,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		251BA35A0B6EAEF43C9BABF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Herbal Encyclopedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49B99542A576AE58B5F1E08C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566C5A5ED838A3CD232A3447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Herbal EncyclopediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A702561B8DC75872BE13D555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59AA2E887AB04E691230116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D53687BA24657C6E00CD7094 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53687C824657C6E00CD7094 /* SecondViewController.swift in Sources */,
-				D53687C624657C6E00CD7094 /* FirstViewController.swift in Sources */,
+				D53687C824657C6E00CD7094 /* SearchViewController.swift in Sources */,
+				D53687C624657C6E00CD7094 /* SpotlightViewController.swift in Sources */,
+				D544005A24701D4800C6263B /* PlantUsesModel.swift in Sources */,
+				D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */,
+				D544005C24701D5700C6263B /* PlantScienceModel.swift in Sources */,
+				D544005824701D2600C6263B /* GrowthInformationModel.swift in Sources */,
+				D53542742465CBE0000046EB /* WarningCell.swift in Sources */,
 				D53687C224657C6E00CD7094 /* AppDelegate.swift in Sources */,
+				D535427C2465D7D8000046EB /* Plant.swift in Sources */,
 				D53687C424657C6E00CD7094 /* SceneDelegate.swift in Sources */,
+				D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */,
+				D544005624701D1700C6263B /* PlantInformationModel.swift in Sources */,
+				D544006024701D9C00C6263B /* PreparationsModel.swift in Sources */,
+				D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */,
+				D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */,
+				D544005E24701D8200C6263B /* BodilyEffectsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53687DB24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift in Sources */,
+				D537947624682A3400354021 /* PlantModelTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +724,7 @@
 		};
 		D53687EB24657C6F00CD7094 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87C5385821B4F2CD18E8F2E /* Pods-Herbal Encyclopedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +743,7 @@
 		};
 		D53687EC24657C6F00CD7094 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB8575BA1DB04A6D6D672C6 /* Pods-Herbal Encyclopedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,8 +762,9 @@
 		};
 		D53687EE24657C6F00CD7094 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3E65D4793E5737A3EF5A8B /* Pods-Herbal EncyclopediaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAF3X77NPN;
@@ -494,8 +785,9 @@
 		};
 		D53687EF24657C6F00CD7094 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756A5962A02963E6FCD6A40D /* Pods-Herbal EncyclopediaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAF3X77NPN;
@@ -516,8 +808,9 @@
 		};
 		D53687F124657C6F00CD7094 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1D453A6D066EC5ABF501AC /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAF3X77NPN;
 				INFOPLIST_FILE = "Herbal EncyclopediaUITests/Info.plist";
@@ -536,8 +829,9 @@
 		};
 		D53687F224657C6F00CD7094 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D8E7B111AEC7343C2C0527 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAF3X77NPN;
 				INFOPLIST_FILE = "Herbal EncyclopediaUITests/Info.plist";

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests
+@end

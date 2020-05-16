@@ -1,0 +1,6 @@
+framework module Pods_Herbal_EncyclopediaTests {
+  umbrella header "Pods-Herbal EncyclopediaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

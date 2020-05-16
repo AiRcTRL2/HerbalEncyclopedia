@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SearchViewController" customModule="Herbal_Encyclopedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="329"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0Vj-hp-COW" kind="relationship" relationship="viewControllers" id="Co5-Yu-bW6"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Spotlight-->
+        <scene sceneID="way-nc-mGl">
+            <objects>
+                <viewController title="Spotlight" id="0Vj-hp-COW" customClass="SpotlightViewController" customModule="Herbal_Encyclopedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pV7-Kc-aiC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqN-ti-UQo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2p-PD-j2B" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1270"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="E1Y-I2-Ieb" userLabel="Data Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1270"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yarrow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v8-yK-Wdk" userLabel="Plant Name">
+                                                        <rect key="frame" x="168" y="0.0" width="78" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="7gW-yc-AaY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yarrow" translatesAutoresizingMaskIntoConstraints="NO" id="iLM-54-GHM" customClass="CustomImageView" customModule="Herbal_Encyclopedia" customModuleProvider="target">
+                                                        <rect key="frame" x="94.5" y="55" width="225" height="225"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="225" id="6ni-u2-QXb"/>
+                                                            <constraint firstAttribute="width" constant="225" id="UV9-kr-p1c"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UcQ-fM-gD6" userLabel="Warning Label">
+                                                        <rect key="frame" x="15" y="295" width="384" height="81.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D50-Kx-aKN" userLabel="Warning VIew Container">
+                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="81.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-Ki-nOI" customClass="CustomLabelView" customModule="Herbal_Encyclopedia" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="31" width="20" height="20"/>
+                                                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="R0S-k8-7MJ"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="qI5-eD-Sx2"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWG-4M-Zjr">
+                                                                        <rect key="frame" x="30" y="0.0" width="354" height="81.5"/>
+                                                                        <string key="text">May cause allergic reaction in rare cases. 
+Use essential oil only under supervision of a professional. 
+Don't take while pregnant.</string>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="hWG-4M-Zjr" firstAttribute="top" secondItem="D50-Kx-aKN" secondAttribute="top" id="Brr-hp-Nvt"/>
+                                                                    <constraint firstItem="hWG-4M-Zjr" firstAttribute="leading" secondItem="NWd-Ki-nOI" secondAttribute="trailing" constant="10" id="GSn-Re-gmA"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="hWG-4M-Zjr" secondAttribute="bottom" id="PB9-MW-f4B"/>
+                                                                    <constraint firstItem="NWd-Ki-nOI" firstAttribute="leading" secondItem="D50-Kx-aKN" secondAttribute="leading" id="fS5-vm-AGt"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="hWG-4M-Zjr" secondAttribute="trailing" id="rXG-1B-ayb"/>
+                                                                    <constraint firstItem="NWd-Ki-nOI" firstAttribute="centerY" secondItem="hWG-4M-Zjr" secondAttribute="centerY" id="vnz-WC-2ae"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="azw-gc-bZe" userLabel="Latin Name">
+                                                        <rect key="frame" x="15" y="391.5" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latin name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-Lv-cGS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achillea millefolium" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr3-wy-7Vt" userLabel="Latin Name Description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XRo-MF-p4z" userLabel="Alias">
+                                                        <rect key="frame" x="15" y="427" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-lc-xwh" userLabel="Alias">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milfoil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-ns-EFN" userLabel="Alias Description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="akD-OS-xOm" userLabel="Plant Family">
+                                                        <rect key="frame" x="15" y="462.5" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-W1-Hoy" userLabel="Plant Family">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asteraceae" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wg-le-Yb2" userLabel="Plant Family Description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CpA-OV-rZq" userLabel="Native To">
+                                                        <rect key="frame" x="15" y="498" width="384" height="41"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbj-9g-T1n" userLabel="Native to">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="41"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfN-t6-amK" userLabel="Native To Description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="41"/>
+                                                                <string key="text">Europe
+West Asia</string>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="p3j-hb-VPc" userLabel="Growth Height">
+                                                        <rect key="frame" x="15" y="554" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Growth height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Q-4T-6MR" userLabel="Growth Height">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 m (3 ft)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToH-C9-vgF" userLabel="Growth Height Description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LfQ-WW-El7" userLabel="Primary Use">
+                                                        <rect key="frame" x="15" y="589.5" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-3V-64u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wound healing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL5-Mr-cTa" userLabel="Primary use description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O89-OL-I4c" userLabel="Secondary Use">
+                                                        <rect key="frame" x="15" y="625" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsv-Eh-Io1" userLabel="Secondary Use">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gynaecology" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnf-jM-adE" userLabel="Primary use description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vJ8-hy-bTG" userLabel="Tertiary Use">
+                                                        <rect key="frame" x="15" y="660.5" width="384" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tertiary use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnI-qA-j2P" userLabel="Tertiary Use">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cold and flu recovery" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m0-7g-EyN" userLabel="Tertiary Use description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d8V-vy-CmR" userLabel="Other Uses">
+                                                        <rect key="frame" x="15" y="696" width="384" height="81.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other uses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxl-f3-fsO" userLabel="Other uses">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="81.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-rR-UBn" userLabel="Other uses descriptions">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="81.5"/>
+                                                                <string key="text">Hay Fever
+Menstrual problems
+Circulatory disorders
+Varicose veins</string>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-jH-dL8" userLabel="Grows in">
+                                                        <rect key="frame" x="15" y="792.5" width="384" height="81.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grows in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-sV-kIj" userLabel="Grows in">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="81.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grows wildly in temporate regions, in meadows and along verges." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4J-sh-TbC" userLabel="Grows in description">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="81.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-KW-Wmx" userLabel="Active Constituents">
+                                                        <rect key="frame" x="15" y="889" width="384" height="142.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-a3-eCI" userLabel="Active Constituents">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="142.5"/>
+                                                                <string key="text">Active 
+constituents</string>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y88-qe-Vt3" userLabel="Active Constituents List">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="142.5"/>
+                                                                <string key="text">Volatile oils
+Sesquiterpene lactones
+Flavnoids
+Alkaloids
+Triterpenes
+Phytosterols
+Tannins</string>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hGZ-sI-uh6" userLabel="Actions">
+                                                        <rect key="frame" x="15" y="1046.5" width="384" height="223.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herb actions" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-sA-1IW" userLabel="Herb Actions">
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="223.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyQ-N8-Pq3" userLabel="Herb Action List">
+                                                                <rect key="frame" x="192" y="0.0" width="192" height="223.5"/>
+                                                                <string key="text">Antipasomidic
+Astringent
+Bitter tonic
+Increases sweating
+Lowers blood pressure
+Reduces fever
+Mild diuretic and urinary antiseptic
+Stops internal bleeding
+Promotes menstruation
+Anti-inflammatory</string>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Mvd-KW-Wmx" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="0ue-hy-yny"/>
+                                                    <constraint firstItem="QkK-jH-dL8" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="3A7-XJ-wKJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hGZ-sI-uh6" secondAttribute="trailing" constant="15" id="3MR-dF-5YL"/>
+                                                    <constraint firstItem="CpA-OV-rZq" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="3lB-qc-7Y9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="p3j-hb-VPc" secondAttribute="trailing" constant="15" id="3rW-xe-aQk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="d8V-vy-CmR" secondAttribute="trailing" constant="15" id="8N3-dR-0DL"/>
+                                                    <constraint firstItem="akD-OS-xOm" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="ArW-Qg-uUY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vJ8-hy-bTG" secondAttribute="trailing" constant="15" id="DA9-rS-TG8"/>
+                                                    <constraint firstItem="d8V-vy-CmR" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="Hjj-1w-UQv"/>
+                                                    <constraint firstItem="p3j-hb-VPc" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="KR8-3q-gZQ"/>
+                                                    <constraint firstItem="LfQ-WW-El7" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="MRs-yO-6r8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="azw-gc-bZe" secondAttribute="trailing" constant="15" id="P9i-Ff-818"/>
+                                                    <constraint firstItem="XRo-MF-p4z" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="RTE-wj-6nf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="O89-OL-I4c" secondAttribute="trailing" constant="15" id="T2y-Ji-h4w"/>
+                                                    <constraint firstItem="azw-gc-bZe" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="YdF-cA-bhW"/>
+                                                    <constraint firstItem="hGZ-sI-uh6" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="Yzs-sx-FJr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mvd-KW-Wmx" secondAttribute="trailing" constant="15" id="cUz-PG-cWc"/>
+                                                    <constraint firstItem="vJ8-hy-bTG" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="iTv-1k-jdi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LfQ-WW-El7" secondAttribute="trailing" constant="15" id="lpZ-Xx-AFt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CpA-OV-rZq" secondAttribute="trailing" constant="15" id="mX9-NB-u8B"/>
+                                                    <constraint firstItem="O89-OL-I4c" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="obn-v3-xCC"/>
+                                                    <constraint firstItem="UcQ-fM-gD6" firstAttribute="leading" secondItem="E1Y-I2-Ieb" secondAttribute="leading" constant="15" id="pLg-y1-REE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XRo-MF-p4z" secondAttribute="trailing" constant="15" id="qJf-LA-6En"/>
+                                                    <constraint firstAttribute="trailing" secondItem="akD-OS-xOm" secondAttribute="trailing" constant="15" id="rRT-SB-Lkf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UcQ-fM-gD6" secondAttribute="trailing" constant="15" id="rqG-4r-f2v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QkK-jH-dL8" secondAttribute="trailing" constant="15" id="w2U-Ga-F7C"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="E1Y-I2-Ieb" firstAttribute="leading" secondItem="Q2p-PD-j2B" secondAttribute="leading" id="4ne-SC-tK7"/>
+                                            <constraint firstAttribute="trailing" secondItem="E1Y-I2-Ieb" secondAttribute="trailing" id="El4-oq-Too"/>
+                                            <constraint firstAttribute="bottom" secondItem="E1Y-I2-Ieb" secondAttribute="bottom" id="crG-o0-Vt5"/>
+                                            <constraint firstItem="E1Y-I2-Ieb" firstAttribute="top" secondItem="Q2p-PD-j2B" secondAttribute="top" id="oIM-eT-9Pc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Q2p-PD-j2B" firstAttribute="top" secondItem="ZqN-ti-UQo" secondAttribute="top" id="3W2-vk-yb1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q2p-PD-j2B" secondAttribute="bottom" id="FoN-xj-7EA"/>
+                                    <constraint firstItem="E1Y-I2-Ieb" firstAttribute="width" secondItem="ZqN-ti-UQo" secondAttribute="width" id="KS5-a7-sTJ"/>
+                                    <constraint firstItem="Q2p-PD-j2B" firstAttribute="width" secondItem="ZqN-ti-UQo" secondAttribute="width" id="SDT-nD-eza"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q2p-PD-j2B" secondAttribute="trailing" id="Tnv-cv-vga"/>
+                                    <constraint firstItem="Q2p-PD-j2B" firstAttribute="leading" secondItem="ZqN-ti-UQo" secondAttribute="leading" id="mP4-SG-czb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZqN-ti-UQo" firstAttribute="leading" secondItem="zW7-7z-kzL" secondAttribute="leading" id="06y-07-bds"/>
+                            <constraint firstItem="zW7-7z-kzL" firstAttribute="trailing" secondItem="ZqN-ti-UQo" secondAttribute="trailing" id="APk-TQ-aEI"/>
+                            <constraint firstItem="ZqN-ti-UQo" firstAttribute="top" secondItem="zW7-7z-kzL" secondAttribute="top" id="Kvd-4Q-xHl"/>
+                            <constraint firstItem="zW7-7z-kzL" firstAttribute="bottom" secondItem="ZqN-ti-UQo" secondAttribute="bottom" id="wdc-W6-03i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zW7-7z-kzL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Spotlight" image="first" id="p0f-tr-xmc"/>
+                    <navigationItem key="navigationItem" id="F8V-cl-edo"/>
+                    <connections>
+                        <outlet property="plantImage" destination="iLM-54-GHM" id="ujg-xE-q2B"/>
+                        <outlet property="plantName" destination="0v8-yK-Wdk" id="8Ew-sH-H3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVa-g0-pb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Yarrow" width="994" height="1006"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>

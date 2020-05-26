@@ -433,8 +433,34 @@ Anti-inflammatory</string>
                     <tabBarItem key="tabBarItem" title="Spotlight" image="first" id="p0f-tr-xmc"/>
                     <navigationItem key="navigationItem" id="F8V-cl-edo"/>
                     <connections>
+                        <outlet property="activeConstituentsDescLabel" destination="y88-qe-Vt3" id="L1F-Kj-4wQ"/>
+                        <outlet property="activeConstituentsStackView" destination="Mvd-KW-Wmx" id="WZz-Gg-M3H"/>
+                        <outlet property="aliasLabel" destination="Nk8-ns-EFN" id="ohL-UB-w6H"/>
+                        <outlet property="aliasStackView" destination="XRo-MF-p4z" id="ua2-ml-4KQ"/>
+                        <outlet property="grownInStackView" destination="QkK-jH-dL8" id="NyW-zy-QZL"/>
+                        <outlet property="growthHeightDescLabel" destination="ToH-C9-vgF" id="wNe-jU-Ij4"/>
+                        <outlet property="growthHeightStackView" destination="p3j-hb-VPc" id="anC-Ja-enY"/>
+                        <outlet property="growthLocationAndConditionsDescLabel" destination="b4J-sh-TbC" id="ApG-PQ-fA8"/>
+                        <outlet property="latinNameDescLabel" destination="wr3-wy-7Vt" id="aNp-jO-Yet"/>
+                        <outlet property="latinNameStackView" destination="azw-gc-bZe" id="t0g-J7-Iyo"/>
+                        <outlet property="nativeRegionsDescLabel" destination="MfN-t6-amK" id="7BV-FS-VYy"/>
+                        <outlet property="nativeToStackView" destination="CpA-OV-rZq" id="RZH-77-6k6"/>
+                        <outlet property="otherUsesDescLabel" destination="D4T-rR-UBn" id="c1o-Mj-r9d"/>
+                        <outlet property="otherUsesStackView" destination="d8V-vy-CmR" id="i8Q-Gk-Ar0"/>
+                        <outlet property="plantActionsDescLabel" destination="QyQ-N8-Pq3" id="SQo-Im-syV"/>
+                        <outlet property="plantActionsStackView" destination="hGZ-sI-uh6" id="NSS-6t-zXd"/>
+                        <outlet property="plantFamilyDescLabel" destination="1Wg-le-Yb2" id="d5B-jT-bAZ"/>
+                        <outlet property="plantFamilyStackView" destination="akD-OS-xOm" id="XYh-sg-azJ"/>
                         <outlet property="plantImage" destination="iLM-54-GHM" id="ujg-xE-q2B"/>
                         <outlet property="plantName" destination="0v8-yK-Wdk" id="8Ew-sH-H3Q"/>
+                        <outlet property="primaryUseDescLabel" destination="NL5-Mr-cTa" id="K3p-m4-stD"/>
+                        <outlet property="primaryUseStackView" destination="LfQ-WW-El7" id="PRE-Yk-zcb"/>
+                        <outlet property="secondaryUseDescLabel" destination="rnf-jM-adE" id="IWP-w3-08V"/>
+                        <outlet property="secondaryUseStackView" destination="O89-OL-I4c" id="yD3-he-hIf"/>
+                        <outlet property="tertiaryUseDescLabel" destination="5m0-7g-EyN" id="IQE-uf-DNZ"/>
+                        <outlet property="tertiaryUseStackView" destination="vJ8-hy-bTG" id="o8t-jn-bE8"/>
+                        <outlet property="warningDescriptionLabel" destination="hWG-4M-Zjr" id="ThT-lM-Sdv"/>
+                        <outlet property="warningStackView" destination="UcQ-fM-gD6" id="ZQK-7d-Muu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVa-g0-pb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

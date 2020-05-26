@@ -67,7 +67,7 @@ extension Plant {
                       Secondary Use: \(self.plantUses.secondaryUse)\n
                       Tertiary Use: \(self.plantUses.tertiaryUse)\n
                       Other Uses: \(self.plantUses.otherUses)\n
-                      Grows in: \(self.plantInformation.growsIn)\n
+                      Grows in: \(self.growthInformation.growsIn)\n
                       Key Constituents: \(self.plantScience.keyConstituents)\n
                       Volatile oils: \(self.plantScience.volatileOils)
                       Key Actions: \(self.bodilyEffects.keyActions)\n

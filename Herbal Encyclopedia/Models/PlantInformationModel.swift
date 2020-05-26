@@ -15,7 +15,6 @@ struct PlantInformationModel: Codable {
     let latinName: String
     let plantFamily: String
     let nativeTo: [String]
-    let growsIn: String
     let warnings: [String]
 }
 

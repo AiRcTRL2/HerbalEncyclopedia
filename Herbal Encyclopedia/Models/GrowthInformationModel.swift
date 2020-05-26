@@ -11,6 +11,7 @@ import SwiftyJSON
 
 struct GrowthInformationModel: Codable {
     let growthHeight: String
+    let growsIn: String
     let foliageType: String
     let disease: [String]
     let pests: [String]

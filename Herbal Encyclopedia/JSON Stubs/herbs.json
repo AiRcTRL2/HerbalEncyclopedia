@@ -9,11 +9,11 @@
             "latin_name": "Achillea millefolium",
             "plant_family": "Asteraceae",
             "native_to": ["Europe", "West Asia"],
-            "grows_in": "Grows wildly in temporate regions, in meadows and along verges.",
             "warnings": ["May cause allergic reaction in rare cases.", "Use the essential oil only under professional supervision.", "Do not take during pregnancy."]
         },
         "growth_information": {
             "growth_height": "1 m (3 ft)",
+            "grows_in": "Grows wildly in temporate regions, in meadows and along verges.",
             "foliage_type": "Deciduous",
             "life_cycle": "Perennial",
             "disease": ["Powdery Mildew"],

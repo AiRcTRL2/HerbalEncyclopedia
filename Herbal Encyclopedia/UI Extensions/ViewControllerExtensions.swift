@@ -20,7 +20,10 @@ extension UIViewController {
         if stringList.count > 1 {
             for string in stringList {
                 let bulletPoint = NSMutableAttributedString(string: "\u{2022}   ", attributes: [NSAttributedString.Key.paragraphStyle: style, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)])
-                bulletPoint.append(NSAttributedString(string: (string + "\n"), attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .light)]))
+                bulletPoint.append(NSAttributedString(string: (string), attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .light)]))
+                if string != stringList.last {
+                    bulletPoint.append(NSMutableAttributedString(string: "\n"))
+                }
                 mainString.append(bulletPoint)
             }
         } else if stringList.count == 1 {

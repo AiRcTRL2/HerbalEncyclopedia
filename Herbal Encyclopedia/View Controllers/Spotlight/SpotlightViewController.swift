@@ -27,22 +27,20 @@ class SpotlightViewController: UIViewController {
     @IBOutlet weak var growthLocationAndConditionsDescLabel: UILabel!
     @IBOutlet weak var activeConstituentsDescLabel: UILabel!
     @IBOutlet weak var plantActionsDescLabel: UILabel!
-    
-    // stack views
-    @IBOutlet weak var warningStackView: UIStackView!
-    @IBOutlet weak var latinNameStackView: UIStackView!
-    @IBOutlet weak var aliasStackView: UIStackView!
-    @IBOutlet weak var plantFamilyStackView: UIStackView!
-    @IBOutlet weak var nativeToStackView: UIStackView!
-    @IBOutlet weak var growthHeightStackView: UIStackView!
-    @IBOutlet weak var primaryUseStackView: UIStackView!
-    @IBOutlet weak var secondaryUseStackView: UIStackView!
-    @IBOutlet weak var tertiaryUseStackView: UIStackView!
-    @IBOutlet weak var otherUsesStackView: UIStackView!
-    @IBOutlet weak var grownInStackView: UIStackView!
-    @IBOutlet weak var activeConstituentsStackView: UIStackView!
-    @IBOutlet weak var plantActionsStackView: UIStackView!
-    
+
+    // title labels
+    @IBOutlet weak var latinNameTitleLabel: UILabel!
+    @IBOutlet weak var aliasTitleLabel: UILabel!
+    @IBOutlet weak var plantFamilyTitleLabel: UILabel!
+    @IBOutlet weak var nativeToTitleLabel: UILabel!
+    @IBOutlet weak var growthHeightTitleLabel: UILabel!
+    @IBOutlet weak var primaryUseTitleLabel: UILabel!
+    @IBOutlet weak var secondaryUseTitleLabel: UILabel!
+    @IBOutlet weak var tertiaryUseTitleLabel: UILabel!
+    @IBOutlet weak var otherUsesTitleLabel: UILabel!
+    @IBOutlet weak var growthLocationAndTitleLabel: UILabel!
+    @IBOutlet weak var activeConstituentsTitleLabel: UILabel!
+    @IBOutlet weak var plantActionsTitleLabel: UILabel!
     
     var plants: [Plant]? {
         if let plantFile = Plant.readJSONFromFile(fileName: "herbs") {
@@ -58,15 +56,17 @@ class SpotlightViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkDayAndPlant()
-        updateView()
+        updatePlant()
+        configureBorders()
     }
+    
 }
 
 
 extension SpotlightViewController {
     func checkDayAndPlant() {
         self.spotlightPlant = plants?.randomElement()
-        print("This is the plant \n", self.spotlightPlant)
+        print("This is the plant \n", self.spotlightPlant as Any)
         // check current date vs last recorded date
         
         // if date is the same, show the stored spotlight plant
@@ -74,7 +74,7 @@ extension SpotlightViewController {
         // if the date is not the same, set the current date and show a random new plants from the array
     }
     
-    func updateView() {
+    func updatePlant() {
         if let plant = self.spotlightPlant {
             self.plantName.text = plant.plantInformation.name
             self.plantImage.image = UIImage(named: plant.localImageName)
@@ -101,8 +101,23 @@ extension SpotlightViewController {
             self.plantActionsDescLabel.attributedText = bulletPointAttributedString(stringList: plant.bodilyEffects.keyActions)
             
         }
-        
-        latinNameStackView.addBorder(toSide: .Top, withColor: UIColor.lightGray.cgColor, andThickness: 0.5)
-        aliasStackView.addBorder(toSide: .Top, withColor: UIColor.lightGray.cgColor, andThickness: 0.5)
     }
+    
+    func configureBorders() {
+        // offsetX should be the negative of the leading padding to correctly cover the entire screen
+
+        aliasTitleLabel.addBorder(toSide: .FullScreenWidthTop, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.5, offsetX: -15)
+//        latinNameTitleLabel.addBorder(toSide: .FullScreenWidthBottom, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.2, offsetX: -15, offsetY: 10)
+//
+//        nativeToTitleLabel.addBorder(toSide: .FullScreenWidthBottom, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.2, offsetX: -15, offsetY: 10)
+//
+//        otherUsesTitleLabel.addBorder(toSide: .FullScreenWidthBottom, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.2, offsetX: -15, offsetY: 0)
+//
+//
+//        growthLocationAndTitleLabel.addBorder(toSide: .FullScreenWidthBottom, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.2, offsetX: -15, offsetY: 0)
+//        activeConstituentsTitleLabel.addBorder(toSide: .FullScreenWidthBottom, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.2, offsetX: -15, offsetY: 14)
+//
+//        plantActionsTitleLabel.addBorder(toSide: .FullScreenWidthBottom, withColor: ColourHelper.separatorGrey().cgColor, andThickness: 0.2, offsetX: -15, offsetY: 14)
+    }
+    
 }

@@ -15,20 +15,4 @@ class WarningCell: UITableViewCell {
         super.awakeFromNib()
         
     }
-    
-    func configure(warnings: [String]) {
-        let style = NSMutableParagraphStyle()
-        style.alignment = .left
-        style.headIndent = 20
-
-        let text = NSMutableAttributedString()
-        
-        
-        for warning in warnings {
-            let warningText = NSMutableAttributedString(string: "\u{2022} \(warning)\n", attributes: [NSAttributedString.Key.paragraphStyle: style,NSAttributedString.Key.foregroundColor:UIColor.blue])
-            text.append(warningText)
-        }
-
-        warningLabel.attributedText = text
-    }
 }

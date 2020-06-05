@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelAndDescriptionCell" id="Qhg-J7-pLf" customClass="LabelAndDescriptionCell" customModule="Herbal_Encyclopedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qhg-J7-pLf" id="fps-ev-dc5">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0F-a1-EzM" userLabel="LabelAndDescriptionContainer">
+                        <rect key="frame" x="0.0" y="11" width="414" height="278"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WIC-aR-gZ1">
+                                <rect key="frame" x="20" y="10" width="374" height="258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zos-MY-ngd" userLabel="title">
+                                        <rect key="frame" x="0.0" y="108.5" width="187" height="41"/>
+                                        <string key="text">Active 
+constituents</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-yw-pgX" userLabel="description">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="258"/>
+                                        <string key="text">Volatile oils
+Sesquiterpene lactones
+Flavnoids
+Alkaloids
+Triterpenes
+Phytosterols
+Tannins</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4N6-yw-pgX" secondAttribute="trailing" id="74p-qO-F1Q"/>
+                                    <constraint firstItem="4N6-yw-pgX" firstAttribute="leading" secondItem="Zos-MY-ngd" secondAttribute="trailing" id="IMl-se-E0Y"/>
+                                    <constraint firstItem="4N6-yw-pgX" firstAttribute="top" secondItem="WIC-aR-gZ1" secondAttribute="top" id="ZsA-Hi-dsA"/>
+                                    <constraint firstAttribute="bottom" secondItem="4N6-yw-pgX" secondAttribute="bottom" id="xLz-aE-88H"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WIC-aR-gZ1" secondAttribute="trailing" constant="20" id="H6o-YU-nyV"/>
+                            <constraint firstItem="WIC-aR-gZ1" firstAttribute="leading" secondItem="W0F-a1-EzM" secondAttribute="leading" constant="20" id="MOn-Ea-GTE"/>
+                            <constraint firstAttribute="bottom" secondItem="WIC-aR-gZ1" secondAttribute="bottom" constant="10" id="XZT-EU-Xye"/>
+                            <constraint firstItem="WIC-aR-gZ1" firstAttribute="top" secondItem="W0F-a1-EzM" secondAttribute="top" constant="10" id="hEq-u8-eZV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="W0F-a1-EzM" secondAttribute="trailing" id="Sqg-i3-ETb"/>
+                    <constraint firstItem="W0F-a1-EzM" firstAttribute="top" secondItem="fps-ev-dc5" secondAttribute="topMargin" id="Zvh-n3-czT"/>
+                    <constraint firstItem="W0F-a1-EzM" firstAttribute="leading" secondItem="fps-ev-dc5" secondAttribute="leading" id="uUm-lh-qAC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W0F-a1-EzM" secondAttribute="bottom" id="yvB-UF-VeI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="4N6-yw-pgX" id="bLi-3x-qXd"/>
+                <outlet property="title" destination="Zos-MY-ngd" id="cTo-4r-uLH"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

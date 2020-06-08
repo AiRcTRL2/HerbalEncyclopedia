@@ -18,5 +18,7 @@ class DescriptorTitleCell: UITableViewCell {
     
     func configure(titleText: String) {
         self.titleLabel.text = titleText
+        self.titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .thin)
+
     }
 }

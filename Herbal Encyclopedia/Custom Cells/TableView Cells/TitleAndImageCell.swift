@@ -14,7 +14,7 @@ class TitleAndImageCell: UITableViewCell {
     @IBOutlet weak var plantImageView: CustomImageView!
     
     override func awakeFromNib() {
-        //
+        self.selectionStyle = .none
     }
     
     func configure(plantName: String, plantImageName: String) {

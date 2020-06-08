@@ -19,5 +19,6 @@ class DescriptorExplanationCell: UITableViewCell {
     
     func configure (descriptionText: String) {
         self.descriptionLabel.text = descriptionText
+        self.descriptionLabel.font = UIFont.systemFont(ofSize: 18, weight: .ultraLight)
     }
 }

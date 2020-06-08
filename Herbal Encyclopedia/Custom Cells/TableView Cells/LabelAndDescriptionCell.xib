@@ -19,10 +19,10 @@
                         <rect key="frame" x="0.0" y="11" width="414" height="278"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WIC-aR-gZ1">
-                                <rect key="frame" x="20" y="10" width="374" height="258"/>
+                                <rect key="frame" x="20" y="10" width="354" height="258"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zos-MY-ngd" userLabel="title">
-                                        <rect key="frame" x="0.0" y="108.5" width="187" height="41"/>
+                                        <rect key="frame" x="0.0" y="108.5" width="177" height="41"/>
                                         <string key="text">Active 
 constituents</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
@@ -30,7 +30,7 @@ constituents</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-yw-pgX" userLabel="description">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="258"/>
+                                        <rect key="frame" x="177" y="0.0" width="177" height="258"/>
                                         <string key="text">Volatile oils
 Sesquiterpene lactones
 Flavnoids
@@ -50,13 +50,29 @@ Tannins</string>
                                     <constraint firstAttribute="bottom" secondItem="4N6-yw-pgX" secondAttribute="bottom" id="xLz-aE-88H"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJ4-ZM-p7b">
+                                <rect key="frame" x="374" y="109" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZvB-tG-xSP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="disclosureIndicator2">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateForwardPressed:" destination="Qhg-J7-pLf" eventType="touchUpInside" id="Qei-Yt-0Wb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="WIC-aR-gZ1" secondAttribute="trailing" constant="20" id="H6o-YU-nyV"/>
+                            <constraint firstItem="UJ4-ZM-p7b" firstAttribute="centerY" secondItem="W0F-a1-EzM" secondAttribute="centerY" id="4Q9-Gb-M3h"/>
+                            <constraint firstAttribute="trailing" secondItem="WIC-aR-gZ1" secondAttribute="trailing" constant="40" id="H6o-YU-nyV"/>
                             <constraint firstItem="WIC-aR-gZ1" firstAttribute="leading" secondItem="W0F-a1-EzM" secondAttribute="leading" constant="20" id="MOn-Ea-GTE"/>
+                            <constraint firstItem="UJ4-ZM-p7b" firstAttribute="leading" secondItem="WIC-aR-gZ1" secondAttribute="trailing" id="T7g-4X-d4c"/>
                             <constraint firstAttribute="bottom" secondItem="WIC-aR-gZ1" secondAttribute="bottom" constant="10" id="XZT-EU-Xye"/>
                             <constraint firstItem="WIC-aR-gZ1" firstAttribute="top" secondItem="W0F-a1-EzM" secondAttribute="top" constant="10" id="hEq-u8-eZV"/>
+                            <constraint firstAttribute="trailing" secondItem="UJ4-ZM-p7b" secondAttribute="trailing" id="jaP-vS-Jo8"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -69,9 +85,13 @@ Tannins</string>
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="4N6-yw-pgX" id="bLi-3x-qXd"/>
+                <outlet property="navigateForward" destination="UJ4-ZM-p7b" id="jQm-5r-97x"/>
                 <outlet property="title" destination="Zos-MY-ngd" id="cTo-4r-uLH"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="disclosureIndicator2" width="208" height="208"/>
+    </resources>
 </document>

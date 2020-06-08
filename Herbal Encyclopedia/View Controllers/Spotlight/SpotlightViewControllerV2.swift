@@ -104,15 +104,7 @@ class SpotlightViewControllerV2: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    func checkDayAndPlant() {
-        self.spotlightPlant = plants?.randomElement()
-        print("This is the plant \n", self.spotlightPlant as Any)
-        // check current date vs last recorded date
-        
-        // if date is the same, show the stored spotlight plant
-        
-        // if the date is not the same, set the current date and show a random new plants from the array
-    }
+    
     
     func createTableViewDataSourceFromPlantModel() {
         if let plant = spotlightPlant {
@@ -173,11 +165,14 @@ extension SpotlightViewControllerV2: UITableViewDelegate, UITableViewDataSource 
                 // set the flag as to whether this cell requires an expanded description segue or not (flag is also the file name of the json file where those descriptions should be located for lookup)
                 if let cellTitle = CellTitles.stringValue[adjustedIndex] {
                     cell.requiresExpandedDescriptionJsonIdentifier = JSONFileNameIdentifiers.forCellTitles[cellTitle]
+                    cell.titleString = CellTitles.stringValue[adjustedIndex]!
                 } else {
                     cell.requiresExpandedDescriptionJsonIdentifier = nil
                 }
                 
-                
+                cell.indexPath = indexPath
+                cell.delegate = self
+                cell.configure()
                 cell.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
                 return cell
                 
@@ -188,29 +183,35 @@ extension SpotlightViewControllerV2: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row > 1 {
-//            let adustedIndex = indexPath.row - 2
-//            let cellTitle = CellTitles.stringValue[adustedIndex]
-//            if let title = cellTitle {
-//                if plantPropertiesForTableView[adustedIndex] is String {
-//                    let description: String = plantPropertiesForTableView[adustedIndex] as! String
-//                    currentSelectedCellData = [title: [description]]
-//                } else if plantPropertiesForTableView[adustedIndex] is [String] {
-//                    let description: [String] = plantPropertiesForTableView[adustedIndex] as! [String]
-//                    currentSelectedCellData = [title: description]
-//                }
-//            }
-//        }
-        let cell = tableView.cellForRow(at: indexPath) as! LabelAndDescriptionCell
-        if cell.requiresExpandedDescriptionJsonIdentifier != nil {
-            let destinationViewController = storyboard?.instantiateViewController(withIdentifier: SegueIdentifiers.descriptorsVC) as! DescriptorsViewController
-            
-            destinationViewController.cellDataToDescribe = DescriptorViewModel(pageTitle: cell.titleString, jsonFileIdentifier: cell.requiresExpandedDescriptionJsonIdentifier, descriptorTitles: cell.descriptionOrDescList as! [String], descriptorExplanations: nil)
-            // update the view model by performing the description lookup
-            destinationViewController.cellDataToDescribe?.parseExplanationsFromTitles()
-            
-            navigationController?.pushViewController(destinationViewController, animated: true)
-        }
+        navigateForwardPressed(indexPath: indexPath)
+    }
+}
+
+extension SpotlightViewControllerV2 {
+    func checkDayAndPlant() {
+        self.spotlightPlant = plants?.randomElement()
+        print("This is the plant \n", self.spotlightPlant as Any)
+        // check current date vs last recorded date
         
+        // if date is the same, show the stored spotlight plant
+        
+        // if the date is not the same, set the current date and show a random new plants from the array
+    }
+}
+
+extension SpotlightViewControllerV2: LabelAndDescriptionCellDelegate {
+    func navigateForwardPressed(indexPath: IndexPath) {
+        if indexPath.row > 1 {
+            let cell = tableView.cellForRow(at: indexPath) as! LabelAndDescriptionCell
+            if cell.requiresExpandedDescriptionJsonIdentifier != nil {
+                let destinationViewController = storyboard?.instantiateViewController(withIdentifier: SegueIdentifiers.descriptorsVC) as! DescriptorsViewController
+                
+                destinationViewController.cellDataToDescribe = DescriptorViewModel(pageTitle: cell.titleString, jsonFileIdentifier: cell.requiresExpandedDescriptionJsonIdentifier, descriptorTitles: cell.descriptionOrDescList as! [String], descriptorExplanations: nil)
+                // update the view model by performing the description lookup
+                destinationViewController.cellDataToDescribe?.parseExplanationsFromTitles()
+                
+                navigationController?.pushViewController(destinationViewController, animated: true)
+            }
+        }
     }
 }

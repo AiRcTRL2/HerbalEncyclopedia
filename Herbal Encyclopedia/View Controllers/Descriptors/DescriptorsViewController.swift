@@ -40,8 +40,8 @@ class DescriptorsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .black
         self.title = cellDataToDescribe?.pageTitle
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(descriptorTitle, forCellReuseIdentifier: CellReuseIdentifiers.descriptorTitleCell)
@@ -50,12 +50,13 @@ class DescriptorsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
         if cellDataToDescribe != nil {
             cellDataToDescribe?.parseExplanationsFromTitles()
             tableView.reloadData()
         }
+        
     }
-    
 }
 
 extension DescriptorsViewController: UITableViewDelegate, UITableViewDataSource {

@@ -27,7 +27,6 @@
 		D535427C2465D7D8000046EB /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535427B2465D7D8000046EB /* Plant.swift */; };
 		D53687C224657C6E00CD7094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C124657C6E00CD7094 /* AppDelegate.swift */; };
 		D53687C424657C6E00CD7094 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C324657C6E00CD7094 /* SceneDelegate.swift */; };
-		D53687C624657C6E00CD7094 /* SpotlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C524657C6E00CD7094 /* SpotlightViewController.swift */; };
 		D53687C824657C6E00CD7094 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687C724657C6E00CD7094 /* SearchViewController.swift */; };
 		D53687CB24657C6E00CD7094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53687C924657C6E00CD7094 /* Main.storyboard */; };
 		D53687CD24657C6F00CD7094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53687CC24657C6F00CD7094 /* Assets.xcassets */; };
@@ -50,6 +49,8 @@
 		D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006424702F0800C6263B /* UIViewExtensions.swift */; };
 		D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F452465861B004A1C30 /* CustomImageView.swift */; };
 		D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */; };
+		D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */; };
+		D58C25D3248EACE800CBCE67 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +97,6 @@
 		D53687BE24657C6E00CD7094 /* Herbal Encyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Herbal Encyclopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53687C124657C6E00CD7094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53687C324657C6E00CD7094 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D53687C524657C6E00CD7094 /* SpotlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewController.swift; sourceTree = "<group>"; };
 		D53687C724657C6E00CD7094 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D53687CA24657C6E00CD7094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D53687CC24657C6F00CD7094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 		D544006424702F0800C6263B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D57F0F452465861B004A1C30 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
+		D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		F87C5385821B4F2CD18E8F2E /* Pods-Herbal Encyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +217,8 @@
 				D507B8A32481685C005B6751 /* DescriptorTitleCell.xib */,
 				D507B8A524816950005B6751 /* DescriptorExplanationCell.swift */,
 				D507B8A72481699D005B6751 /* DescriptorExplanationCell.xib */,
+				D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */,
+				D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */,
 			);
 			path = "TableView Cells";
 			sourceTree = "<group>";
@@ -310,7 +314,6 @@
 		D53687F324657F7200CD7094 /* Spotlight */ = {
 			isa = PBXGroup;
 			children = (
-				D53687C524657C6E00CD7094 /* SpotlightViewController.swift */,
 				D5328BC224801D2800DE0B79 /* SpotlightViewControllerV2.swift */,
 			);
 			path = Spotlight;
@@ -489,6 +492,7 @@
 				D5328BC724801DB600DE0B79 /* TitleAndImageCell.xib in Resources */,
 				D538291C248A7C8A0012F90B /* body_effects.json in Resources */,
 				D53687CB24657C6E00CD7094 /* Main.storyboard in Resources */,
+				D58C25D3248EACE800CBCE67 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +621,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53687C824657C6E00CD7094 /* SearchViewController.swift in Sources */,
-				D53687C624657C6E00CD7094 /* SpotlightViewController.swift in Sources */,
 				D544005A24701D4800C6263B /* PlantUsesModel.swift in Sources */,
 				D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */,
 				D544005C24701D5700C6263B /* PlantScienceModel.swift in Sources */,
@@ -638,6 +641,7 @@
 				D5328BC524801D9500DE0B79 /* TitleAndImageCell.swift in Sources */,
 				D507B8A624816950005B6751 /* DescriptorExplanationCell.swift in Sources */,
 				D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */,
+				D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */,
 				D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */,
 				D544005E24701D8200C6263B /* BodilyEffectsModel.swift in Sources */,
 			);

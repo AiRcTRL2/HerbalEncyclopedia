@@ -24,21 +24,32 @@
                                 <rect key="frame" x="0.0" y="118" width="414" height="675"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No plants found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqo-Hi-0Ub">
+                                <rect key="frame" x="0.0" y="433" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Eqo-Hi-0Ub" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Dzn-mV-gCs"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="19N-CG-ELB" secondAttribute="bottom" constant="20" id="IZX-1A-atU"/>
+                            <constraint firstItem="Eqo-Hi-0Ub" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="JZd-2L-Tnw"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Eqo-Hi-0Ub" secondAttribute="trailing" id="RC4-AU-D7l"/>
                             <constraint firstItem="0eq-vI-Pwt" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="TYD-c0-nPD"/>
                             <constraint firstItem="19N-CG-ELB" firstAttribute="top" secondItem="0eq-vI-Pwt" secondAttribute="bottom" constant="20" id="WOi-YG-f5E"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="0eq-vI-Pwt" secondAttribute="trailing" constant="20" id="YSI-4v-XTm"/>
                             <constraint firstItem="0eq-vI-Pwt" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="20" id="dT0-1m-WTa"/>
                             <constraint firstItem="19N-CG-ELB" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="o7y-EX-BU8"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="19N-CG-ELB" secondAttribute="trailing" id="rNT-db-Gry"/>
+                            <constraint firstItem="Eqo-Hi-0Ub" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="tkU-HS-SIf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="noPlantsFoundLabel" destination="Eqo-Hi-0Ub" id="Ol5-c1-Etc"/>
                         <outlet property="searchTextField" destination="0eq-vI-Pwt" id="3ir-B6-aBw"/>
                         <outlet property="tableView" destination="19N-CG-ELB" id="aSd-bM-fVJ"/>
                     </connections>
@@ -133,7 +144,6 @@
         <!--Navigation Controller-->
         <scene sceneID="yWE-1h-cH5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zad-h7-grZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController title="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="T1A-xJ-dpd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Spotlight" image="first" id="Bfd-oy-quG"/>
                     <toolbarItems/>
@@ -146,6 +156,7 @@
                         <segue destination="ZYg-d3-VNn" kind="relationship" relationship="rootViewController" id="Hki-Pq-Ty3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zad-h7-grZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1360.8695652173915" y="-338.16964285714283"/>
         </scene>

@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The description explanation will go here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIN-BN-nFk">
-                                <rect key="frame" x="40" y="5" width="334" height="150"/>
+                                <rect key="frame" x="20" y="5" width="374" height="170"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,10 +27,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="yIN-BN-nFk" secondAttribute="bottom" constant="45" id="BUj-VO-feG"/>
+                            <constraint firstAttribute="bottom" secondItem="yIN-BN-nFk" secondAttribute="bottom" constant="25" id="BUj-VO-feG"/>
                             <constraint firstItem="yIN-BN-nFk" firstAttribute="top" secondItem="otR-Mw-yf9" secondAttribute="top" constant="5" id="OlQ-GW-lzY"/>
-                            <constraint firstAttribute="trailing" secondItem="yIN-BN-nFk" secondAttribute="trailing" constant="40" id="eVO-8e-2Lq"/>
-                            <constraint firstItem="yIN-BN-nFk" firstAttribute="leading" secondItem="otR-Mw-yf9" secondAttribute="leading" constant="40" id="jKK-mD-1DK"/>
+                            <constraint firstAttribute="trailing" secondItem="yIN-BN-nFk" secondAttribute="trailing" constant="20" id="eVO-8e-2Lq"/>
+                            <constraint firstItem="yIN-BN-nFk" firstAttribute="leading" secondItem="otR-Mw-yf9" secondAttribute="leading" constant="20" id="jKK-mD-1DK"/>
                         </constraints>
                     </view>
                 </subviews>

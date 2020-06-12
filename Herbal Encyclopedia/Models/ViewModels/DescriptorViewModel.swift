@@ -17,9 +17,16 @@ struct DescriptorViewModel {
     var descriptorTitles: [String]
     var descriptorExplanations: [String]? {
         didSet {
-            tableViewDataSource = (0 ..< descriptorTitles.count*2-1).map { $0 % 2 == 0 ? descriptorTitles[$0/2] as String : (descriptorExplanations?[$0/2] ?? "") as String }
+            if descriptorTitles.count == 1 {
+                if let descriptorExplanations = descriptorExplanations {
+                    tableViewDataSource = [descriptorTitles[0], descriptorExplanations[0]]
+                }
+            } else {
+                tableViewDataSource = (0 ... descriptorTitles.count*2-1).map { $0 % 2 == 0 ? descriptorTitles[$0/2] as String : (descriptorExplanations?[$0/2] ?? "") as String }
+            }
         }
     }
+    var describingPlant: Plant?
     /**
      This list is responsible for the amalgamation of both the titles and explanations lists in the most efficient manner known.
      */

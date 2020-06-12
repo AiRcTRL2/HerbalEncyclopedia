@@ -68,11 +68,7 @@ class SpotlightViewControllerV2: UIViewController {
         return nil
     }
     
-    var spotlightPlant: Plant? {
-        didSet {
-            createTableViewDataSourceFromPlantModel()
-        }
-    }
+    var spotlightPlant: Plant?
     var plantPropertiesForTableView: [Any] = []
     
     var currentSelectedCellData: [String: [String]] = [:]
@@ -80,6 +76,9 @@ class SpotlightViewControllerV2: UIViewController {
     let titleAndImageCell = UINib(nibName: TableViewXibNames.titleAndImage, bundle: nil)
     let warningCell = UINib(nibName: TableViewXibNames.warningCell, bundle: nil)
     let labelAndDescriptionCell = UINib(nibName: TableViewXibNames.labelAndDescriptionCell, bundle: nil)
+    
+    // determines some actions that will not be carried out if the view controller is being used by the search view controller
+    var didFlowComeFromSearchViewController: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,23 +90,38 @@ class SpotlightViewControllerV2: UIViewController {
         tableView.register(warningCell, forCellReuseIdentifier: TableViewReuseIdentifiers.warningCell)
         tableView.register(labelAndDescriptionCell, forCellReuseIdentifier: TableViewReuseIdentifiers.labelAndDescriptionCell)
         
-        checkDayAndPlant()
+        if didFlowComeFromSearchViewController == false {
+            checkDayAndPlant()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+        createTableViewDataSourceFromPlantModel()
+        if didFlowComeFromSearchViewController == false {
+            navigationController?.setNavigationBarHidden(true, animated: animated)
+        }
+        navigationController?.navigationBar.tintColor = .black
+        
+        if let plant = spotlightPlant {
+            self.title = plant.plantInformation.name
+        }
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+        if didFlowComeFromSearchViewController == false {
+            navigationController?.setNavigationBarHidden(false, animated: animated)
+        }
     }
     
     
     
     func createTableViewDataSourceFromPlantModel() {
         if let plant = spotlightPlant {
+            // reset list as this is a reused view controller
+            plantPropertiesForTableView = []
             // must follow same order as cellTitles enum
             plantPropertiesForTableView.append(plant.plantInformation.latinName)
             plantPropertiesForTableView.append(plant.plantInformation.alias)
@@ -155,6 +169,8 @@ extension SpotlightViewControllerV2: UITableViewDelegate, UITableViewDataSource 
                 // check if the value to be insterted is string or attributed string
                 if plantPropertiesForTableView[adjustedIndex] is String {
                     cell.descriptionLabel.text = plantPropertiesForTableView[adjustedIndex] as? String
+                    // used for forward segues
+                    cell.descriptionOrDescList = [plantPropertiesForTableView[adjustedIndex]] as? [String]
                 } else if plantPropertiesForTableView[adjustedIndex] is [String] {
                     // set the attributed string using bullet point creation function
                     cell.descriptionLabel.attributedText = bulletPointAttributedString(stringList: plantPropertiesForTableView[adjustedIndex] as! [String])
@@ -190,7 +206,6 @@ extension SpotlightViewControllerV2: UITableViewDelegate, UITableViewDataSource 
 extension SpotlightViewControllerV2 {
     func checkDayAndPlant() {
         self.spotlightPlant = plants?.randomElement()
-        print("This is the plant \n", self.spotlightPlant as Any)
         // check current date vs last recorded date
         
         // if date is the same, show the stored spotlight plant
@@ -205,8 +220,7 @@ extension SpotlightViewControllerV2: LabelAndDescriptionCellDelegate {
             let cell = tableView.cellForRow(at: indexPath) as! LabelAndDescriptionCell
             if cell.requiresExpandedDescriptionJsonIdentifier != nil {
                 let destinationViewController = storyboard?.instantiateViewController(withIdentifier: SegueIdentifiers.descriptorsVC) as! DescriptorsViewController
-                
-                destinationViewController.cellDataToDescribe = DescriptorViewModel(pageTitle: cell.titleString, jsonFileIdentifier: cell.requiresExpandedDescriptionJsonIdentifier, descriptorTitles: cell.descriptionOrDescList as! [String], descriptorExplanations: nil)
+                destinationViewController.cellDataToDescribe = DescriptorViewModel(pageTitle: cell.titleString, jsonFileIdentifier: cell.requiresExpandedDescriptionJsonIdentifier, descriptorTitles: cell.descriptionOrDescList as! [String], descriptorExplanations: nil, describingPlant: self.spotlightPlant)
                 // update the view model by performing the description lookup
                 destinationViewController.cellDataToDescribe?.parseExplanationsFromTitles()
                 

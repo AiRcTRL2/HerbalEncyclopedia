@@ -40,7 +40,6 @@ class DescriptorsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.tintColor = .black
         self.title = cellDataToDescribe?.pageTitle
         tableView.delegate = self
         tableView.dataSource = self

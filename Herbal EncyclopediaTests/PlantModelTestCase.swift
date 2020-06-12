@@ -65,8 +65,6 @@ class PlantModelTestCase: XCTestCase {
         let preparations = plant.preparations
         
         print(plantInformation, growthInformation, plantUses, plantScience, bodilyEffects, preparations)
-        
-        XCTAssert(( plantInformation != nil && growthInformation != nil && plantUses != nil && plantScience != nil && bodilyEffects != nil && preparations != nil ))
     }
     
     func testPrintPlant() {

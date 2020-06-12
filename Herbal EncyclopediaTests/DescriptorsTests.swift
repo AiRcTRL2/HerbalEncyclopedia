@@ -24,7 +24,7 @@ class DescriptorsTests: XCTestCase {
 
     func testExample() throws {
         descriptorModel.parseExplanationsFromTitles()
-        print(descriptorModel.descriptorExplanations)
+        print(descriptorModel.descriptorExplanations as Any)
         XCTAssert(!descriptorModel.descriptorExplanations!.isEmpty)
     }
 

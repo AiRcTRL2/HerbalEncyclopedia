@@ -40,6 +40,17 @@ class SearchViewController: UIViewController {
         
         searchTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.navigationBar.tintColor = .black
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
@@ -73,7 +84,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension SearchViewController: SearchTableViewCellDelegate {
     func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant) {
-        print("yup")
+        presentPlantFromSearchController(plant: plant)
     }
 }
 
@@ -106,3 +117,16 @@ extension SearchViewController {
     }
 }
 
+extension SearchViewController {
+    func presentPlantFromSearchController(plant: Plant) {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Spotlight") as? SpotlightViewControllerV2
+        
+        if let controllerUnwrapped = controller {
+            // set the new plant
+            controllerUnwrapped.spotlightPlant = plant
+            // disable main screen only functions
+            controllerUnwrapped.didFlowComeFromSearchViewController = true
+            self.navigationController?.pushViewController(controllerUnwrapped, animated: true)
+        }
+    }
+}

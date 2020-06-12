@@ -31,7 +31,8 @@
            "volatile_oils": ["Linalool", "Camphor", "Sabinene", "Azulene"]
        },
         "bodily_effects": {
-            "key_actions": ["Antipasmodic", "Astringent", "Bitter tonic", "Increases sweating", "Lowers blood pressure", "Reduces fever", "Mild diuretic and urinary antiseptic", "Stops internal bleeding", "Promotes menstruation", "Anti-inflammatory"]
+            "key_actions": ["Antipasmodic", "Astringent", "Bitter tonic", "Increases sweating", "Lowers blood pressure", "Reduces fever", "Mild diuretic", "Urinary antiseptic", "Stops bleeding via Achilleine", "Promotes & regulates menstruation", "Anti-inflammatory"],
+            "plant_specific": ["Anti-inflammatory"]
         },
         "preparations": {
             "infusion": "Combine Yarrow with Elderflower & Peppermint, and infuse with a lid for up to 15 minutes. Drink hot or cold as a cold & flu aide.",

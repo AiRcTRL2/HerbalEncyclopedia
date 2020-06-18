@@ -9,7 +9,6 @@
 import Foundation
 
 struct PreparationsModel: Codable {
-    let infusion: String
-    let tincture: String
-    let essentialOil: String
+    let methodsOfPreparation: [String]
+    let plantSpecific: [String: String]
 }

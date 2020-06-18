@@ -37,7 +37,8 @@ private enum CellTitles {
              9: "Other uses",
              10: "Active constituents",
              11: "Volatile oils",
-             12: "Plant effects"
+             12: "Bodily effects",
+             13: "Preparation"
         ]
 }
 
@@ -46,8 +47,9 @@ private enum JSONFileNameIdentifiers {
     [
         "Plant species": "plant_species",
         "Active constituents": "key_constituents",
-        "Plant effects": "body_effects",
-        "Volatile oils": "volatile_oils"
+        "Bodily effects": "body_effects",
+        "Volatile oils": "volatile_oils",
+        "Preparation": "preparation_methods"
     ]
 }
 
@@ -136,6 +138,7 @@ class SpotlightViewControllerV2: UIViewController {
             plantPropertiesForTableView.append(plant.plantScience.keyConstituents)
             plantPropertiesForTableView.append(plant.plantScience.volatileOils)
             plantPropertiesForTableView.append(plant.bodilyEffects.keyActions)
+            plantPropertiesForTableView.append(plant.preparations.methodsOfPreparation)
             
             tableView.reloadData()
         }

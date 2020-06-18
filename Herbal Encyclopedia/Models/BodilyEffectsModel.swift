@@ -10,5 +10,5 @@ import Foundation
 
 struct BodilyEffectsModel: Codable {
     let keyActions: [String]
-    let plantSpecific: [String]
+    let plantSpecific: [String: String]
 }

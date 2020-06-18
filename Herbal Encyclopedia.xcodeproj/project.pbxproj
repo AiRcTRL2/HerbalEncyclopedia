@@ -47,6 +47,7 @@
 		D544006024701D9C00C6263B /* PreparationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005F24701D9C00C6263B /* PreparationsModel.swift */; };
 		D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006224702CA500C6263B /* ViewControllerExtensions.swift */; };
 		D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006424702F0800C6263B /* UIViewExtensions.swift */; };
+		D552FE03249BC8140085784E /* preparation_methods.json in Resources */ = {isa = PBXBuildFile; fileRef = D552FE02249BC8140085784E /* preparation_methods.json */; };
 		D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F452465861B004A1C30 /* CustomImageView.swift */; };
 		D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */; };
 		D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */; };
@@ -123,6 +124,7 @@
 		D544005F24701D9C00C6263B /* PreparationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationsModel.swift; sourceTree = "<group>"; };
 		D544006224702CA500C6263B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D544006424702F0800C6263B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D552FE02249BC8140085784E /* preparation_methods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preparation_methods.json; sourceTree = "<group>"; };
 		D57F0F452465861B004A1C30 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
 		D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		D53542772465CEA5000046EB /* JSON Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				D552FE02249BC8140085784E /* preparation_methods.json */,
 				D5E45FBB2493D0FC0070E9B1 /* plant_species.json */,
 				D53542782465CF31000046EB /* herbs.json */,
 				D5382919248A7C8A0012F90B /* body_effects.json */,
@@ -486,6 +489,7 @@
 				D538291D248A7C8A0012F90B /* volatile_oils.json in Resources */,
 				D5328BCC24801FBA00DE0B79 /* LabelAndDescriptionCell.xib in Resources */,
 				D507B8A42481685C005B6751 /* DescriptorTitleCell.xib in Resources */,
+				D552FE03249BC8140085784E /* preparation_methods.json in Resources */,
 				D53687D024657C6F00CD7094 /* LaunchScreen.storyboard in Resources */,
 				D53542792465CF31000046EB /* herbs.json in Resources */,
 				D538291B248A7C8A0012F90B /* key_constituents.json in Resources */,

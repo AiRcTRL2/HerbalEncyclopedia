@@ -32,15 +32,19 @@
        },
         "bodily_effects": {
             "key_actions": ["Antipasmodic", "Astringent", "Bitter tonic", "Increases sweating", "Lowers blood pressure", "Reduces fever", "Mild diuretic", "Urinary antiseptic", "Stops bleeding via Achilleine", "Promotes & regulates menstruation", "Anti-inflammatory"],
-            "plant_specific": ["Anti-inflammatory"]
+            "plant_specific": {
+                "Anti-inflammatory": "Yarrow may aid liver inflammation, treat skin infections & signs of aging."
+            }
         },
         "preparations": {
-            "infusion": "Combine Yarrow with Elderflower & Peppermint, and infuse with a lid for up to 15 minutes. Drink hot or cold as a cold & flu aide.",
-            "tincture": "Prepare as a tincture. For indigestion, take 20 drops 3 times a day.",
-            "essential_oil": "When prepared as an essential oil, Yarrow is often used by herbalists to treat Catarrh (mucous buildup)"
+            "methods_of_preparation": ["Infusion", "Tincture", "Essential oil"],
+            "plant_specific": {
+                "Infusion": "Combine Yarrow with Elderflower & Peppermint, and infuse with a lid for up to 15 minutes. Drink hot or cold as a cold & flu aide.",
+                "Tincture": "Prepare as a tincture. For indigestion, take 20 drops 3 times a day.",
+                "Essential oil": "When prepared as an essential oil, Yarrow is often used by herbalists to treat Catarrh (mucous buildup)"
             }
         }
-    ]
+    }]
 }
 
 

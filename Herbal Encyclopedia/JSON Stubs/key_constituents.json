@@ -1,12 +1,17 @@
 
 {
     "data": {
-        "Volatile oils": "",
+        "Volatile oils": "Volatile oils are the most important medcinally active constituents of the plant. They are often extracted into essential oils, which are frequently used in fragrances (perfumes, scented candles, diffusers) and health and beauty products (skin treatments, creams and oils). \n\nA note on purchasing essential oils: \nEssential oils are marvellous products, especially when used as topical solutions or for aromatherapy which aids regulation of mood. However, not all oils are created equal. The quality of the essential oil is determined by multiple factors. For example, where it is grown, the genetic chemotype of the species and the production process. It is important to research the oils you plan to buy and attempt to choose the highest quality. They will have more signficant impacts physiologically.",
+        "Phenols": "Phenols are a varied collection of plant constituents which can be anti-inflammatory, antiseptic and can sometimes be antiviral. Phenols form strong hydrogen bonds, resulting in a higher melting point (182 degrees celsius) and high water solubility. \n\nPhenols are widely used in many household products, such as household cleaners and mouthwash. Some phenols, such as salicylic acid are molecules similar to aspirin.",
+        "Polyphenols": "Polyphenols are a category of compounds naturally found in many plant foods, including fruits, vegetables, herbs, spices, and some seeds such as cocoa. They can be antioxidant, helping to combat free radicals that may damage your cells. They may also reduce inflammation.",
+        "Flavanoids": "Flavanoids are a category of Polyphenols and provide pigmentation (colour) to many flowers and fruits, which helps attract pollenating insects. They are antioxidant and can improve circulation. Due to their antioxidant properties, some flavanoids are anitviral, anti-inflammatory, anti-allergic, anti-cancer and can protect the liver. "
         "Sesquiterpene lactones": "",
         "Flavnoids": "",
         "Alkaloids": "",
         "Triterpenes": "",
         "Phytosterols": "",
-        "Tannins": ""
+        "Tannins": "Tannins can be found in all plants, some having highler levels and others having lower levels. Their harsh flavour deters plants and animals. They are phenolic compounds that contract and tighten tiessues of the body by binding with and precipitating proteins. Due to their astringent nature, they are often used to stop bleeding, tighten up tissues or dry up overly watery secretions (e.g. diarrhoea).",
+        "Saponins": "Saponins are the main active constituent in many medicinal plants. They produce a soap-like foam when lathered with a liquid substance. The root of the soapwort plant was historically used as soap, hence the name. In plants, they help to ward off microbes and fungi. Saponins are poisonous to fish and have been used by many indigenous cultures for fishing. \n\nSaponins can be steroidal, meaning that those plants have hormonal activity. For example, the first contraceptive pill was derived from Wild Yam via a chemical called Diosgenin (similar to a plant-based estrogen). Wild Yam had been used by indigenous cultures to treat PMS, help to regulate cycles and relieve cramps (even during labour) and to relieve menopausal symptoms as it is also a source of progesterone.",
+        "Proanthocyanidins": "Proanthocyanidins are polyphenolic compounds which often give a dark hue (red, blue and purple colour) to plants. They are highly antioxidant and help to combat free radicals in the body. They also help to protect the circulatory system from damage."
     }
 }

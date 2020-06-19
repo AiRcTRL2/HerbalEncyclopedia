@@ -72,6 +72,8 @@ struct DescriptorViewModel {
                         explanation = "\(explanation) \n\n\(plantSpecificExplanation)"
                     }
                     tempDict.append(explanation)
+                } else {
+                    tempDict.append("Oops. We couldn't find an explanation for \"\(title).\" It would be really helpful if you contacted me via the app and let me know what's missing so I can work on fixing that as soon as possible!")
                 }
             }
 

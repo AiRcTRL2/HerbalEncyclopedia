@@ -27,7 +27,7 @@
             "uses_descriptions": ["Yarrow was used widely to heal wounds, and in Scotland a traditional wound ointment was made from Yarrow.", "In Gynaecology, yarrow aids the menstrual cycle by reducing heavy menstrual bleeding and easing period pain.", "Combined with other herbs, aids recovery from cold and flu"],
         },
        "plant_science": {
-           "key_constituents" : ["Volatile oils", "Sesquiterpene lactones", "Flavnoids", "Alkaloids", "Triterpenes", "Phytosterols", "Tannins"],
+           "key_constituents" : ["Volatile oils", "Sesquiterpene lactones", "Flavonoids", "Alkaloids", "Triterpenes", "Phytosterols", "Tannins"],
            "volatile_oils": ["Linalool", "Camphor", "Sabinene", "Azulene"]
        },
         "bodily_effects": {

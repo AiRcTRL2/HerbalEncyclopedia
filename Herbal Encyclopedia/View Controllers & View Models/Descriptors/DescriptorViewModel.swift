@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// The only sections which hold the "plant specific" explanations to combine with the generic explanations.
 private enum PlantSpecficExplanations {
     static let bodilyEffects = "Bodily effects"
     static let preparation = "Preparation"
@@ -40,6 +41,7 @@ struct DescriptorViewModel {
      Attempts to parse explanations from the json document reflecting the requested explanation titles. Will also attempt to parse plant specific explanations for the same title, amalgamating these two values in separate paragraphs.
      */
     mutating func parseExplanationsFromTitles() {
+        // holds all generic explanations parsed from the json
         var dict: [String: String]?
         
         // check existence of path
@@ -59,7 +61,7 @@ struct DescriptorViewModel {
             }
         }
 
-        // check if dict values are available
+        // attempts to match required explanations with those available in the parsed dictionary above
         if let dictUnwrapped = dict {
             var tempDict: [String] = []
             // get plant specific additions for this page title
@@ -83,7 +85,7 @@ struct DescriptorViewModel {
     }
     
     /**
-     This function attempts to fetch the plant specific explanation dictionary for the required plant section. It determines the correct plant section by maging the set view controller's title against the PlantSpecificExplanations enum.
+     This function attempts to fetch the plant specific explanation dictionary for the required plant section. It determines the correct plant section by matching the set view controller's title against the PlantSpecificExplanations enum.
      
      - Parameters:
         - pageTitle: String representation of the view controller's set page title

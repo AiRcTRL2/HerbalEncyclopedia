@@ -19,10 +19,6 @@ private enum CellReuseIdentifiers {
     static let descriptorExplanationCell = "descriptorExplanationCell"
 }
 
-enum DescriptorLookup {
-    static let dict: [String: String] = [:]
-}
-
 class DescriptorsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -31,9 +27,10 @@ class DescriptorsViewController: UIViewController {
     let descriptorTitle = UINib(nibName: TableViewXibNames.descriptorTitleCell, bundle: nil)
     let descriptorExplanation = UINib(nibName: TableViewXibNames.descriptorExplanationCell, bundle: nil)
     
-    // sender index row
+    /// Counter to monitor tableView setup progress (tableView fetches data from two sources).
     var senderIndexRow: Int?
     
+    /// Contains all data responsible for this view controller's operation
     var cellDataToDescribe: DescriptorViewModel?
     
     var dataArrayFromDict: [String] = []

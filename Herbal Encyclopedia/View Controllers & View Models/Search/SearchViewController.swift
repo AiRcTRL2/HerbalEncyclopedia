@@ -79,8 +79,10 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: Cell tap delegate
 extension SearchViewController: SearchTableViewCellDelegate {
-    func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant) {
-        presentPlantFromSearchController(plant: plant)
+    func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant?) {
+        if let plantUnwrapped = plant {
+            presentPlantFromSearchController(plant: plantUnwrapped)
+        }
     }
 }
 

@@ -8,19 +8,35 @@
 
 import XCTest
 
+@testable import Herbal_Encyclopedia
 class RecipeModelTestCase: XCTestCase {
+    
+    var recipeData: RecipesCategoriesContainerModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        recipeData = RecipesCategoriesContainerModel.readJson()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+        recipeData = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPrintRecipeCategoriesModel() throws {
+        print()
+        print()
+        print("----------------------- RECIPE CATEGORIES -----------------------")
+        print()
+        for category in recipeData.data {
+            print("----------------------- Category \(category.name) -----------------------")
+            for recipe in category.recipes {
+                print("----------------------- Recipe -----------------------")
+                print(recipe)
+                print()
+            }
+            print()
+        }
     }
 
     func testPerformanceExample() throws {

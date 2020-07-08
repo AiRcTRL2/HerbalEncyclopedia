@@ -1,0 +1,55 @@
+
+{
+    "data": [
+        {
+            "name": "creams",
+            "category_image": "1",
+            "recipes": [
+                {
+                    "recipe_name": "",
+                    "recipe_steps": [""]
+                }
+            ]
+        },
+        {
+            "name": "oils",
+            "category_image": "2",
+            "recipes": [
+                {
+                    "recipe_name": "",
+                    "recipe_steps": [""]
+                }
+            ]
+        },
+        {
+            "name": "aromatherapy",
+            "category_image": "3",
+            "recipes": [
+                {
+                    "recipe_name": "",
+                    "recipe_steps": [""]
+                }
+            ]
+        },
+        {
+            "name": "teas",
+            "category_image": "4",
+            "recipes": [
+                {
+                    "recipe_name": "",
+                    "recipe_steps": [""]
+                }
+            ]
+        },
+        {
+            "name": "smoothies",
+            "category_image": "5",
+            "recipes": [
+                {
+                    "recipe_name": "",
+                    "recipe_steps": [""]
+                }
+            ]
+        }
+    ]
+}

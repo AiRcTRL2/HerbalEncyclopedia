@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct RecipeCategoryModel: Codable {
+    let name: String
+    let categoryImage: String
+    let recipes: [RecipeModel]
+}

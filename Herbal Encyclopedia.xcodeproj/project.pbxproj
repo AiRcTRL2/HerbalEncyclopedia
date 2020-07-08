@@ -49,6 +49,13 @@
 		D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006424702F0800C6263B /* UIViewExtensions.swift */; };
 		D54DF92224B4B79000A993DB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54DF92124B4B79000A993DB /* SearchViewModel.swift */; };
 		D552FE03249BC8140085784E /* preparation_methods.json in Resources */ = {isa = PBXBuildFile; fileRef = D552FE02249BC8140085784E /* preparation_methods.json */; };
+		D572A66C24B61BB200A43F30 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A66B24B61BB200A43F30 /* RecipesViewController.swift */; };
+		D572A66E24B61BD300A43F30 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A66D24B61BD300A43F30 /* RecipesViewModel.swift */; };
+		D572A67224B61EE600A43F30 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67124B61EE600A43F30 /* RecipeModel.swift */; };
+		D572A67624B61F6B00A43F30 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = D572A67524B61F6B00A43F30 /* recipes.json */; };
+		D572A67824B6201A00A43F30 /* RecipesCategoriesContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67724B6201A00A43F30 /* RecipesCategoriesContainerModel.swift */; };
+		D572A67A24B6258100A43F30 /* RecipeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67924B6258100A43F30 /* RecipeCategoryModel.swift */; };
+		D572A67C24B626B600A43F30 /* RecipeModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */; };
 		D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F452465861B004A1C30 /* CustomImageView.swift */; };
 		D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */; };
 		D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */; };
@@ -127,6 +134,13 @@
 		D544006424702F0800C6263B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D54DF92124B4B79000A993DB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		D552FE02249BC8140085784E /* preparation_methods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preparation_methods.json; sourceTree = "<group>"; };
+		D572A66B24B61BB200A43F30 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		D572A66D24B61BD300A43F30 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		D572A67124B61EE600A43F30 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		D572A67524B61F6B00A43F30 /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		D572A67724B6201A00A43F30 /* RecipesCategoriesContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCategoriesContainerModel.swift; sourceTree = "<group>"; };
+		D572A67924B6258100A43F30 /* RecipeCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryModel.swift; sourceTree = "<group>"; };
+		D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModelTestCase.swift; sourceTree = "<group>"; };
 		D57F0F452465861B004A1C30 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
 		D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -233,12 +247,8 @@
 		D53542772465CEA5000046EB /* JSON Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				D552FE02249BC8140085784E /* preparation_methods.json */,
-				D5E45FBB2493D0FC0070E9B1 /* plant_species.json */,
-				D53542782465CF31000046EB /* herbs.json */,
-				D5382919248A7C8A0012F90B /* body_effects.json */,
-				D5382918248A7C8A0012F90B /* key_constituents.json */,
-				D538291A248A7C8A0012F90B /* volatile_oils.json */,
+				D572A67324B61F4C00A43F30 /* Plant */,
+				D572A67424B61F5600A43F30 /* Recipes */,
 			);
 			path = "JSON Stubs";
 			sourceTree = "<group>";
@@ -246,13 +256,8 @@
 		D535427A2465D7B5000046EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D535427B2465D7D8000046EB /* Plant.swift */,
-				D544005524701D1700C6263B /* PlantInformationModel.swift */,
-				D544005724701D2600C6263B /* GrowthInformationModel.swift */,
-				D544005924701D4800C6263B /* PlantUsesModel.swift */,
-				D544005B24701D5700C6263B /* PlantScienceModel.swift */,
-				D544005D24701D8200C6263B /* BodilyEffectsModel.swift */,
-				D544005F24701D9C00C6263B /* PreparationsModel.swift */,
+				D572A66F24B61EB300A43F30 /* Plant */,
+				D572A67024B61EC100A43F30 /* Recipes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				D53687DA24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift */,
 				D537947524682A3400354021 /* PlantModelTestCase.swift */,
 				D538291E248A81650012F90B /* DescriptorsTests.swift */,
+				D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */,
 				D53687DC24657C6F00CD7094 /* Info.plist */,
 			);
 			path = "Herbal EncyclopediaTests";
@@ -347,9 +353,10 @@
 		D5380CEA24685C150095665A /* View Controllers & View Models */ = {
 			isa = PBXGroup;
 			children = (
+				D53687F324657F7200CD7094 /* Spotlight */,
 				D507B89E248166D7005B6751 /* Descriptors */,
 				D53687F424657F7D00CD7094 /* Search */,
-				D53687F324657F7200CD7094 /* Spotlight */,
+				D572A66A24B61B8B00A43F30 /* Recipes */,
 			);
 			path = "View Controllers & View Models";
 			sourceTree = "<group>";
@@ -361,6 +368,60 @@
 				D544006424702F0800C6263B /* UIViewExtensions.swift */,
 			);
 			path = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		D572A66A24B61B8B00A43F30 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				D572A66B24B61BB200A43F30 /* RecipesViewController.swift */,
+				D572A66D24B61BD300A43F30 /* RecipesViewModel.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		D572A66F24B61EB300A43F30 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				D535427B2465D7D8000046EB /* Plant.swift */,
+				D544005524701D1700C6263B /* PlantInformationModel.swift */,
+				D544005724701D2600C6263B /* GrowthInformationModel.swift */,
+				D544005924701D4800C6263B /* PlantUsesModel.swift */,
+				D544005B24701D5700C6263B /* PlantScienceModel.swift */,
+				D544005D24701D8200C6263B /* BodilyEffectsModel.swift */,
+				D544005F24701D9C00C6263B /* PreparationsModel.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		D572A67024B61EC100A43F30 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				D572A67724B6201A00A43F30 /* RecipesCategoriesContainerModel.swift */,
+				D572A67924B6258100A43F30 /* RecipeCategoryModel.swift */,
+				D572A67124B61EE600A43F30 /* RecipeModel.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		D572A67324B61F4C00A43F30 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				D552FE02249BC8140085784E /* preparation_methods.json */,
+				D5E45FBB2493D0FC0070E9B1 /* plant_species.json */,
+				D53542782465CF31000046EB /* herbs.json */,
+				D5382919248A7C8A0012F90B /* body_effects.json */,
+				D5382918248A7C8A0012F90B /* key_constituents.json */,
+				D538291A248A7C8A0012F90B /* volatile_oils.json */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		D572A67424B61F5600A43F30 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				D572A67524B61F6B00A43F30 /* recipes.json */,
+			);
+			path = Recipes;
 			sourceTree = "<group>";
 		};
 		D57F0F4424658608004A1C30 /* Custom Views */ = {
@@ -496,6 +557,7 @@
 				D538291C248A7C8A0012F90B /* body_effects.json in Resources */,
 				D53687CB24657C6E00CD7094 /* Main.storyboard in Resources */,
 				D58C25D3248EACE800CBCE67 /* SearchTableViewCell.xib in Resources */,
+				D572A67624B61F6B00A43F30 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53687C824657C6E00CD7094 /* SearchViewController.swift in Sources */,
+				D572A67224B61EE600A43F30 /* RecipeModel.swift in Sources */,
 				D544005A24701D4800C6263B /* PlantUsesModel.swift in Sources */,
 				D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */,
 				D544005C24701D5700C6263B /* PlantScienceModel.swift in Sources */,
@@ -633,11 +696,14 @@
 				D53687C224657C6E00CD7094 /* AppDelegate.swift in Sources */,
 				D5328BC12480075600DE0B79 /* ColourHelper.swift in Sources */,
 				D535427C2465D7D8000046EB /* Plant.swift in Sources */,
+				D572A67A24B6258100A43F30 /* RecipeCategoryModel.swift in Sources */,
 				D53687C424657C6E00CD7094 /* SceneDelegate.swift in Sources */,
 				D507B8A224816816005B6751 /* DescriptorTitleCell.swift in Sources */,
 				D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */,
 				D544005624701D1700C6263B /* PlantInformationModel.swift in Sources */,
 				D5328BC324801D2800DE0B79 /* SpotlightViewControllerV2.swift in Sources */,
+				D572A66E24B61BD300A43F30 /* RecipesViewModel.swift in Sources */,
+				D572A67824B6201A00A43F30 /* RecipesCategoriesContainerModel.swift in Sources */,
 				D544006024701D9C00C6263B /* PreparationsModel.swift in Sources */,
 				D5328BCA24801F7600DE0B79 /* LabelAndDescriptionCell.swift in Sources */,
 				D507B8A024816701005B6751 /* DescriptorsViewController.swift in Sources */,
@@ -647,6 +713,7 @@
 				D54DF92224B4B79000A993DB /* SearchViewModel.swift in Sources */,
 				D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */,
 				D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */,
+				D572A66C24B61BB200A43F30 /* RecipesViewController.swift in Sources */,
 				D544005E24701D8200C6263B /* BodilyEffectsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +723,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D538291F248A81650012F90B /* DescriptorsTests.swift in Sources */,
+				D572A67C24B626B600A43F30 /* RecipeModelTestCase.swift in Sources */,
 				D53687DB24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift in Sources */,
 				D537947624682A3400354021 /* PlantModelTestCase.swift in Sources */,
 			);

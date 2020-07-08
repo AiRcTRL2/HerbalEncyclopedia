@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct RecipesViewModel {
+    var categories: RecipesCategoriesContainerModel? = RecipesCategoriesContainerModel.readJson()
+}

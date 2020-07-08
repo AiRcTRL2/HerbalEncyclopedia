@@ -70,6 +70,7 @@
                     <connections>
                         <segue destination="T1A-xJ-dpd" kind="relationship" relationship="viewControllers" id="yzS-E7-gjz"/>
                         <segue destination="0Of-xG-IVt" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="9t3-u6-4kc" kind="relationship" relationship="viewControllers" id="JDu-wk-POv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -140,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="3013.04347826087" y="-338.16964285714283"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Spotlight Navigation Controller-->
         <scene sceneID="yWE-1h-cH5">
             <objects>
-                <navigationController title="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="T1A-xJ-dpd" sceneMemberID="viewController">
+                <navigationController title="Spotlight Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="T1A-xJ-dpd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Spotlight" image="first" id="Bfd-oy-quG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JgF-m3-4nN">
@@ -159,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="1360.8695652173915" y="-338.16964285714283"/>
         </scene>
-        <!--Search-->
+        <!--Search Navigation Controller-->
         <scene sceneID="jRt-cd-aqw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Of-xG-IVt" sceneMemberID="viewController">
+                <navigationController title="Search Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="0Of-xG-IVt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tOD-ar-hwt">
@@ -178,9 +179,61 @@
             </objects>
             <point key="canvasLocation" x="1360.8695652173915" y="332.8125"/>
         </scene>
+        <!--Recipes-->
+        <scene sceneID="t3O-bL-jUB">
+            <objects>
+                <viewController storyboardIdentifier="recipesStoryboard" title="Recipes" id="xZ9-Jv-236" customClass="RecipesViewController" customModule="Herbal_Encyclopedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F61-Bs-IFw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cUy-fm-mE8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cUy-fm-mE8" firstAttribute="top" secondItem="c0d-PD-kNh" secondAttribute="top" id="J8X-yR-jTE"/>
+                            <constraint firstItem="c0d-PD-kNh" firstAttribute="trailing" secondItem="cUy-fm-mE8" secondAttribute="trailing" id="KPJ-6e-lzq"/>
+                            <constraint firstItem="cUy-fm-mE8" firstAttribute="leading" secondItem="c0d-PD-kNh" secondAttribute="leading" id="iRw-o2-Djy"/>
+                            <constraint firstItem="c0d-PD-kNh" firstAttribute="bottom" secondItem="cUy-fm-mE8" secondAttribute="bottom" id="qWH-Se-4mg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c0d-PD-kNh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uxz-Zj-rCK"/>
+                    <connections>
+                        <outlet property="tableView" destination="cUy-fm-mE8" id="8iQ-zg-9yO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBM-vs-V5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="1122"/>
+        </scene>
+        <!--Recipes Navigation Controller-->
+        <scene sceneID="NHL-7x-B9A">
+            <objects>
+                <navigationController title="Recipes Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="9t3-u6-4kc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipes" image="folder.fill" catalog="system" id="yTL-Nt-p1T"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4bb-id-vJM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xZ9-Jv-236" kind="relationship" relationship="rootViewController" id="fmB-15-JIU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71H-Tw-yCt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="1122"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="folder.fill" catalog="system" width="128" height="95"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

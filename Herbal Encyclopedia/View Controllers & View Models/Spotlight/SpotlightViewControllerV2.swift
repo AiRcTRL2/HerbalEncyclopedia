@@ -106,7 +106,7 @@ class SpotlightViewControllerV2: UIViewController {
         navigationController?.navigationBar.tintColor = .black
         
         if let plant = spotlightPlant {
-            self.title = plant.plantInformation.name
+            self.navigationItem.title = plant.plantInformation.name
         }
 
     }

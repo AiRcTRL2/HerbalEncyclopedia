@@ -9,12 +9,12 @@
 import UIKit
 
 protocol SearchTableViewCellDelegate: class {
-    func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant)
+    func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant?)
 }
 
 class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var searchImage: CustomImageView!
-    @IBOutlet weak var plantName: UILabel!
+    @IBOutlet weak var searchItemText: UILabel!
     
     weak var delegate: SearchTableViewCellDelegate?
     var cellIndex: IndexPath?
@@ -27,14 +27,15 @@ class SearchTableViewCell: UITableViewCell {
     @IBAction func forwardNavigationPressed(_ sender: Any) {
         if let plantUnwrapped = plant, let cellIndexUnwrapped = cellIndex {
             delegate?.forwardNavigationPressed(cellIndexPath: cellIndexUnwrapped, plant: plantUnwrapped)
+        } else if let cellIndexUnwrapped = cellIndex {
+            delegate?.forwardNavigationPressed(cellIndexPath: cellIndexUnwrapped, plant: nil)
         }
     }
     
     func configure() {
         if let plantUnwrapped = plant {
             self.searchImage.image = UIImage(named: plantUnwrapped.localImageName)
-            self.plantName.text = plantUnwrapped.plantInformation.name
+            self.searchItemText.text = plantUnwrapped.plantInformation.name
         }
-        
     }
 }

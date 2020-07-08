@@ -18,7 +18,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-8u-cab">
                         <rect key="frame" x="12" y="0.0" width="390" height="88"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yarrow" translatesAutoresizingMaskIntoConstraints="NO" id="rBX-PO-DdA" userLabel="Plant" customClass="CustomImageView" customModule="Herbal_Encyclopedia" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yarrow" translatesAutoresizingMaskIntoConstraints="NO" id="rBX-PO-DdA" userLabel="Item Image" customClass="CustomImageView" customModule="Herbal_Encyclopedia" customModuleProvider="target">
                                 <rect key="frame" x="8" y="11.5" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="F4Y-8c-ZsO"/>
@@ -30,7 +30,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yarrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-eZ-aHH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yarrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-eZ-aHH" userLabel="Item Name">
                                 <rect key="frame" x="93" y="30.5" width="64.5" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -69,8 +69,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="plantName" destination="Fsi-eZ-aHH" id="pyH-iY-Uo2"/>
                 <outlet property="searchImage" destination="rBX-PO-DdA" id="vQt-Hl-lEG"/>
+                <outlet property="searchItemText" destination="Fsi-eZ-aHH" id="pyH-iY-Uo2"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="113.83928571428571"/>
         </tableViewCell>

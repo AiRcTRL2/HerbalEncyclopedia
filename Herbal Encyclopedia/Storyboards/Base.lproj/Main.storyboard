@@ -71,6 +71,7 @@
                         <segue destination="T1A-xJ-dpd" kind="relationship" relationship="viewControllers" id="yzS-E7-gjz"/>
                         <segue destination="0Of-xG-IVt" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="9t3-u6-4kc" kind="relationship" relationship="viewControllers" id="JDu-wk-POv"/>
+                        <segue destination="waE-Fu-Q8H" kind="relationship" relationship="viewControllers" id="hQM-Qa-UTy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -188,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cUy-fm-mE8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -201,7 +202,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c0d-PD-kNh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Uxz-Zj-rCK"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="Uxz-Zj-rCK"/>
                     <connections>
                         <outlet property="tableView" destination="cUy-fm-mE8" id="8iQ-zg-9yO"/>
                     </connections>
@@ -217,8 +218,8 @@
                     <tabBarItem key="tabBarItem" title="Recipes" image="folder.fill" catalog="system" id="yTL-Nt-p1T"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4bb-id-vJM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4bb-id-vJM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -230,8 +231,45 @@
             </objects>
             <point key="canvasLocation" x="1361" y="1122"/>
         </scene>
+        <!--More-->
+        <scene sceneID="kRo-lQ-7m1">
+            <objects>
+                <viewController title="More" id="VBv-ge-ON9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHC-fd-zCj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ufh-Pl-xAJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="More" id="fcJ-Na-pJn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKI-u6-jIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271.0144927536235" y="1868.9732142857142"/>
+        </scene>
+        <!--More Navigation Controller-->
+        <scene sceneID="dGl-jb-s5f">
+            <objects>
+                <navigationController title="More Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="waE-Fu-Q8H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="circle.grid.3x3.fill" catalog="system" id="Fv3-Gc-cwq"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TN7-20-H7H">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VBv-ge-ON9" kind="relationship" relationship="rootViewController" id="e0A-T2-VVB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O50-lx-VMJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360.8695652173915" y="1868.9732142857142"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circle.grid.3x3.fill" catalog="system" width="128" height="112"/>
         <image name="first" width="30" height="30"/>
         <image name="folder.fill" catalog="system" width="128" height="95"/>
         <image name="second" width="30" height="30"/>

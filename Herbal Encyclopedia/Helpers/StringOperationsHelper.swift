@@ -8,8 +8,12 @@
 
 import UIKit
 
-extension UIViewController {
-    func bulletPointAttributedString(stringList: [String]) -> NSMutableAttributedString {
+struct StringOperationsHelper {
+    static func bulletPoints(stringList: [String]?) -> NSMutableAttributedString? {
+        guard let stringList = stringList else {
+            return nil
+        }
+        
         let style = NSMutableParagraphStyle()
         style.alignment = .left
         style.headIndent = 13

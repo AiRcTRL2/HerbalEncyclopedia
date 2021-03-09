@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Contains information relating to the scientific makeup of the plant
 struct PlantScienceModel: Codable {
     let keyConstituents: [String]
     let volatileOils: [String]

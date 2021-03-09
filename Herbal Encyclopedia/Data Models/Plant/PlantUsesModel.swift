@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Contains information regarding how the plant is traditionally used
 struct PlantUsesModel: Codable {
     let primaryUse: String
     let secondaryUse: String

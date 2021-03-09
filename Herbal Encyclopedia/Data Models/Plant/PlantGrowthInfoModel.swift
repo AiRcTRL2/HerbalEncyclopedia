@@ -9,8 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-struct GrowthInformationModel: Codable {
-    let growthHeight: String
+/// Contains information regarding the growth region and growth challenges of the plant
+struct PlantGrowthInfoModel: Codable {
+    let height: String
     let growsIn: String
     let foliageType: String
     let disease: [String]

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PreparationsModel: Codable {
+/// Contains the methods of preparation for using the plant
+struct PlantPreparationsModel: Codable {
     let methodsOfPreparation: [String]
-    let plantSpecific: [String: String]
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BodilyEffectsModel: Codable {
+/// Contains information regarding the physiological impact of the plant
+struct PlantBodilyEffectsModel: Codable {
     let keyActions: [String]
-    let plantSpecific: [String: String]
 }

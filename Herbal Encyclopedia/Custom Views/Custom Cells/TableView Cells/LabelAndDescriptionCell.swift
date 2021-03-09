@@ -18,10 +18,10 @@ class LabelAndDescriptionCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var navigateForward: UIButton!
     
-    var titleString: String = ""
-    var descriptionOrDescList: [Any]? = []
-    var requiresExpandedDescriptionJsonIdentifier: String?
+    var descriptionList: [String] = []
+    var expandedDescription: String = ""
     var indexPath: IndexPath?
+    
     weak var delegate: LabelAndDescriptionCellDelegate?
     
     override func awakeFromNib() {
@@ -30,13 +30,29 @@ class LabelAndDescriptionCell: UITableViewCell {
     }
     
     @IBAction func navigateForwardPressed(_ sender: Any) {
+        guard navigateForward.isHidden == false else {
+            return
+        }
+        
         if let indexPathUnwrapped = indexPath {
             delegate?.navigateForwardPressed(indexPath: indexPathUnwrapped)
         }
     }
     
-    func configure() {
-        self.navigateForward.isHidden = requiresExpandedDescriptionJsonIdentifier == nil ? true : false
+    func configureText(_ cellTitle: String?, _ descriptionLabelText: [String]?) {
+        title.text = cellTitle
+        descriptionList = descriptionLabelText ?? []
+        
+        if descriptionLabelText?.count == 1 {
+            descriptionLabel.text = descriptionLabelText?.first
+        } else {
+            descriptionLabel.attributedText = StringOperationsHelper.bulletPoints(stringList: descriptionLabelText)
+
+        }
+    }
+    
+    func configureDisclosureIndicator(_ isExpansible: Bool?) {
+        self.navigateForward.isHidden = isExpansible == true ? false : true
     }
 
 }

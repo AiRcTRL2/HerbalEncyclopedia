@@ -35,7 +35,7 @@ class SearchTableViewCell: UITableViewCell {
     func configure() {
         if let plantUnwrapped = plant {
             self.searchImage.image = UIImage(named: plantUnwrapped.localImageName)
-            self.searchItemText.text = plantUnwrapped.plantInformation.name
+            self.searchItemText.text = plantUnwrapped.plantInfo.name
         }
     }
 }

@@ -29,6 +29,7 @@ class LabelAndDescriptionCell: UITableViewCell {
         self.selectionStyle = .none
     }
     
+    /// Alerts the delegate that a tap was detected
     @IBAction func navigateForwardPressed(_ sender: Any) {
         guard navigateForward.isHidden == false else {
             return
@@ -39,6 +40,11 @@ class LabelAndDescriptionCell: UITableViewCell {
         }
     }
     
+    
+    /// Configures the cell's text and underlying data
+    /// - Parameters:
+    ///   - cellTitle: The data being addressed
+    ///   - descriptionLabelText: A list of strings representing the title's main points
     func configureText(_ cellTitle: String?, _ descriptionLabelText: [String]?) {
         title.text = cellTitle
         descriptionList = descriptionLabelText ?? []
@@ -51,6 +57,9 @@ class LabelAndDescriptionCell: UITableViewCell {
         }
     }
     
+    
+    /// Configures if the cell allows navigation or not
+    /// - Parameter isExpansible: A bool indicating whether or not the cell should allow navigation
     func configureDisclosureIndicator(_ isExpansible: Bool?) {
         self.navigateForward.isHidden = isExpansible == true ? false : true
     }

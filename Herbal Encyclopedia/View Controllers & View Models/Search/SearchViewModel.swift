@@ -21,27 +21,28 @@ protocol SearchViewModelDelegate: class {
     Attempting to make this a struct causes the variables, operated on by a mutating function, to cause memory access violations when attempting to read them after the operation is complete.
  **/
 class SearchViewModel {
+    /// Holds a list of all plants
+    var plants: [Plant]?
     
-    var plants: [Plant]? {
-        if let plantFile = Plant.readJSONFromFile(fileName: "herbs") {
-            let plantJson = try! JSON(data: plantFile)
-            return Plant.parseAllPlants(json: plantJson).sorted(by: {$0.plantInformation.name > $1.plantInformation.name})
-        }
-        return nil
-    }
-    
+    /// Holds a list of plants narrowed by the search string
     var plantsNarrowedBySearchString: [Plant] = [] {
         didSet {
             delegate?.dataUpdated()
         }
     }
     
+    /// Alerts the listener of changes
     weak var delegate: SearchViewModelDelegate?
+    
+    init() {
+        let plantContainer: PlantContainer? = ModelParser.parseJson("herbs")
+        plants = plantContainer?.data
+    }
     
     /// Currently filters plant list by name and adds it to the filtered list property & informs the caller of it's result
     func filterList(string: String, completion: (_ dataUpdated: Bool) -> ()) {
         let plantsFiltered: [Plant]? = self.plants?.filter({ (plant) -> Bool in
-            plant.plantInformation.name.contains(string)
+            plant.plantInfo.name.contains(string)
         })
                 
         if let plantsFilteredUnwrapped = plantsFiltered {

@@ -9,10 +9,14 @@
 import UIKit
 import SwiftyJSON
 
+/// This class handles the interaction in the search view, and passes information forward to a Plant view when required
+/// TODO: As iOS less than 13 won't be supported, we need to migrate this viewController to using Combine. This view should be significantly more reactive than is here.
 class SearchViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noPlantsFoundLabel: UILabel!
+    
+    weak var appContainer = AppDelegate.appContainer
     
     let searchTableViewCellNib = UINib(nibName: "SearchTableViewCell", bundle: nil)
     var searchViewModel = SearchViewModel()
@@ -80,8 +84,13 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: Cell tap delegate
 extension SearchViewController: SearchTableViewCellDelegate {
     func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant?) {
-        if let plantUnwrapped = plant {
-            presentPlantFromSearchController(plant: plantUnwrapped)
+        if let plantUnwrapped = plant, let appContainer = appContainer {
+            let viewModel = appContainer.buildPlantViewModel()
+            let plantModel = CoreDataSpotlightPlant()
+            plantModel.savedPlant = plantUnwrapped
+            viewModel.spotlightPlant = plantModel
+            
+            presentPlantFromSearchController(plantViewModel: viewModel)
         }
     }
 }
@@ -111,12 +120,12 @@ extension SearchViewController {
 
 // MARK: New view controller presentation
 extension SearchViewController {
-    func presentPlantFromSearchController(plant: Plant) {
-        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Spotlight") as? SpotlightViewControllerV2
+    func presentPlantFromSearchController(plantViewModel: PlantViewModel) {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Spotlight") as? PlantViewController
         
         if let controllerUnwrapped = controller {
             // set the new plant
-            controllerUnwrapped.spotlightPlant = plant
+            controllerUnwrapped.plantViewModel = plantViewModel
             // disable main screen only functions
             controllerUnwrapped.didFlowComeFromSearchViewController = true
             self.navigationController?.pushViewController(controllerUnwrapped, animated: true)

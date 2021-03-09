@@ -10,13 +10,11 @@
 		259393CA1D4BB13E52B39018 /* Pods_Herbal_EncyclopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5CE997D600968778516DA7 /* Pods_Herbal_EncyclopediaTests.framework */; };
 		3CF0461899B3AFF6949D9CA5 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5F4D64182CAE96494876A3 /* Pods_Herbal_Encyclopedia_Herbal_EncyclopediaUITests.framework */; };
 		6CBC8CFA4195AA62D6CD03D7 /* Pods_Herbal_Encyclopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F37CE94B45BB87D2D983848 /* Pods_Herbal_Encyclopedia.framework */; };
-		D507B8A024816701005B6751 /* DescriptorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507B89F24816701005B6751 /* DescriptorsViewController.swift */; };
-		D507B8A224816816005B6751 /* DescriptorTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507B8A124816816005B6751 /* DescriptorTitleCell.swift */; };
-		D507B8A42481685C005B6751 /* DescriptorTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507B8A32481685C005B6751 /* DescriptorTitleCell.xib */; };
-		D507B8A624816950005B6751 /* DescriptorExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507B8A524816950005B6751 /* DescriptorExplanationCell.swift */; };
-		D507B8A82481699D005B6751 /* DescriptorExplanationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507B8A72481699D005B6751 /* DescriptorExplanationCell.xib */; };
+		D507B8A024816701005B6751 /* DefinitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507B89F24816701005B6751 /* DefinitionsViewController.swift */; };
+		D507B8A624816950005B6751 /* DescriptorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507B8A524816950005B6751 /* DescriptorCell.swift */; };
+		D507B8A82481699D005B6751 /* DescriptorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D507B8A72481699D005B6751 /* DescriptorCell.xib */; };
 		D5328BC12480075600DE0B79 /* ColourHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5328BC02480075600DE0B79 /* ColourHelper.swift */; };
-		D5328BC324801D2800DE0B79 /* SpotlightViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5328BC224801D2800DE0B79 /* SpotlightViewControllerV2.swift */; };
+		D5328BC324801D2800DE0B79 /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5328BC224801D2800DE0B79 /* PlantViewController.swift */; };
 		D5328BC524801D9500DE0B79 /* TitleAndImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5328BC424801D9500DE0B79 /* TitleAndImageCell.swift */; };
 		D5328BC724801DB600DE0B79 /* TitleAndImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5328BC624801DB600DE0B79 /* TitleAndImageCell.xib */; };
 		D5328BCA24801F7600DE0B79 /* LabelAndDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5328BC924801F7600DE0B79 /* LabelAndDescriptionCell.swift */; };
@@ -34,18 +32,18 @@
 		D53687DB24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687DA24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift */; };
 		D53687E624657C6F00CD7094 /* Herbal_EncyclopediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53687E524657C6F00CD7094 /* Herbal_EncyclopediaUITests.swift */; };
 		D537947624682A3400354021 /* PlantModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D537947524682A3400354021 /* PlantModelTestCase.swift */; };
-		D5382917248A78E60012F90B /* DescriptorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5382916248A78E60012F90B /* DescriptorViewModel.swift */; };
+		D5382917248A78E60012F90B /* DefinitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5382916248A78E60012F90B /* DefinitionsViewModel.swift */; };
 		D538291B248A7C8A0012F90B /* key_constituents.json in Resources */ = {isa = PBXBuildFile; fileRef = D5382918248A7C8A0012F90B /* key_constituents.json */; };
 		D538291C248A7C8A0012F90B /* body_effects.json in Resources */ = {isa = PBXBuildFile; fileRef = D5382919248A7C8A0012F90B /* body_effects.json */; };
 		D538291D248A7C8A0012F90B /* volatile_oils.json in Resources */ = {isa = PBXBuildFile; fileRef = D538291A248A7C8A0012F90B /* volatile_oils.json */; };
 		D538291F248A81650012F90B /* DescriptorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538291E248A81650012F90B /* DescriptorsTests.swift */; };
-		D544005624701D1700C6263B /* PlantInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005524701D1700C6263B /* PlantInformationModel.swift */; };
-		D544005824701D2600C6263B /* GrowthInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005724701D2600C6263B /* GrowthInformationModel.swift */; };
+		D544005624701D1700C6263B /* PlantInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005524701D1700C6263B /* PlantInfoModel.swift */; };
+		D544005824701D2600C6263B /* PlantGrowthInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005724701D2600C6263B /* PlantGrowthInfoModel.swift */; };
 		D544005A24701D4800C6263B /* PlantUsesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005924701D4800C6263B /* PlantUsesModel.swift */; };
 		D544005C24701D5700C6263B /* PlantScienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005B24701D5700C6263B /* PlantScienceModel.swift */; };
-		D544005E24701D8200C6263B /* BodilyEffectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005D24701D8200C6263B /* BodilyEffectsModel.swift */; };
-		D544006024701D9C00C6263B /* PreparationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005F24701D9C00C6263B /* PreparationsModel.swift */; };
-		D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006224702CA500C6263B /* ViewControllerExtensions.swift */; };
+		D544005E24701D8200C6263B /* PlantBodilyEffectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005D24701D8200C6263B /* PlantBodilyEffectsModel.swift */; };
+		D544006024701D9C00C6263B /* PlantPreparationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544005F24701D9C00C6263B /* PlantPreparationsModel.swift */; };
+		D544006324702CA500C6263B /* StringOperationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006224702CA500C6263B /* StringOperationsHelper.swift */; };
 		D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D544006424702F0800C6263B /* UIViewExtensions.swift */; };
 		D54DF92224B4B79000A993DB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54DF92124B4B79000A993DB /* SearchViewModel.swift */; };
 		D552FE03249BC8140085784E /* preparation_methods.json in Resources */ = {isa = PBXBuildFile; fileRef = D552FE02249BC8140085784E /* preparation_methods.json */; };
@@ -60,6 +58,19 @@
 		D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */; };
 		D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */; };
 		D58C25D3248EACE800CBCE67 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */; };
+		D5A1555825F7BB7800E4CCDA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1555725F7BB7800E4CCDA /* Request.swift */; };
+		D5A1556025F7BE6D00E4CCDA /* PlantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1555F25F7BE6D00E4CCDA /* PlantRequest.swift */; };
+		D5A1556525F7BFD000E4CCDA /* PlantNetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1556425F7BFD000E4CCDA /* PlantNetworkRequestTests.swift */; };
+		D5C8600725F6863100920DAC /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8600625F6863100920DAC /* ModelParser.swift */; };
+		D5C8600D25F68E5200920DAC /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8600C25F68E5200920DAC /* AppContainer.swift */; };
+		D5C8601625F690F200920DAC /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8601525F690F200920DAC /* PlantViewModel.swift */; };
+		D5C8601B25F692B500920DAC /* CoreDataSpotlightPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8601A25F692B500920DAC /* CoreDataSpotlightPlant.swift */; };
+		D5C8602925F6A56400920DAC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8602825F6A56400920DAC /* DateHelper.swift */; };
+		D5C8604325F6AE1C00920DAC /* PlantDescipritonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8604225F6AE1C00920DAC /* PlantDescipritonContainer.swift */; };
+		D5C8605225F6D60C00920DAC /* TitleAndDefinitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8605125F6D60C00920DAC /* TitleAndDefinitionModel.swift */; };
+		D5C8605825F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8605725F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift */; };
+		D5C8606025F6EACC00920DAC /* DictionaryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */; };
+		D5C8606525F6F79300920DAC /* PlantSpotlightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8606425F6F79300920DAC /* PlantSpotlightItem.swift */; };
 		D5E45FBC2493D0FC0070E9B1 /* plant_species.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E45FBB2493D0FC0070E9B1 /* plant_species.json */; };
 /* End PBXBuildFile section */
 
@@ -89,13 +100,11 @@
 		6C3E65D4793E5737A3EF5A8B /* Pods-Herbal EncyclopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal EncyclopediaTests.debug.xcconfig"; path = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		756A5962A02963E6FCD6A40D /* Pods-Herbal EncyclopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal EncyclopediaTests.release.xcconfig"; path = "Target Support Files/Pods-Herbal EncyclopediaTests/Pods-Herbal EncyclopediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		99D8E7B111AEC7343C2C0527 /* Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests/Pods-Herbal Encyclopedia-Herbal EncyclopediaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D507B89F24816701005B6751 /* DescriptorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorsViewController.swift; sourceTree = "<group>"; };
-		D507B8A124816816005B6751 /* DescriptorTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorTitleCell.swift; sourceTree = "<group>"; };
-		D507B8A32481685C005B6751 /* DescriptorTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptorTitleCell.xib; sourceTree = "<group>"; };
-		D507B8A524816950005B6751 /* DescriptorExplanationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorExplanationCell.swift; sourceTree = "<group>"; };
-		D507B8A72481699D005B6751 /* DescriptorExplanationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptorExplanationCell.xib; sourceTree = "<group>"; };
+		D507B89F24816701005B6751 /* DefinitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsViewController.swift; sourceTree = "<group>"; };
+		D507B8A524816950005B6751 /* DescriptorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorCell.swift; sourceTree = "<group>"; };
+		D507B8A72481699D005B6751 /* DescriptorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptorCell.xib; sourceTree = "<group>"; };
 		D5328BC02480075600DE0B79 /* ColourHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourHelper.swift; sourceTree = "<group>"; };
-		D5328BC224801D2800DE0B79 /* SpotlightViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewControllerV2.swift; sourceTree = "<group>"; };
+		D5328BC224801D2800DE0B79 /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
 		D5328BC424801D9500DE0B79 /* TitleAndImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndImageCell.swift; sourceTree = "<group>"; };
 		D5328BC624801DB600DE0B79 /* TitleAndImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAndImageCell.xib; sourceTree = "<group>"; };
 		D5328BC924801F7600DE0B79 /* LabelAndDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndDescriptionCell.swift; sourceTree = "<group>"; };
@@ -119,18 +128,18 @@
 		D53687E524657C6F00CD7094 /* Herbal_EncyclopediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Herbal_EncyclopediaUITests.swift; sourceTree = "<group>"; };
 		D53687E724657C6F00CD7094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D537947524682A3400354021 /* PlantModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModelTestCase.swift; sourceTree = "<group>"; };
-		D5382916248A78E60012F90B /* DescriptorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorViewModel.swift; sourceTree = "<group>"; };
+		D5382916248A78E60012F90B /* DefinitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsViewModel.swift; sourceTree = "<group>"; };
 		D5382918248A7C8A0012F90B /* key_constituents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = key_constituents.json; sourceTree = "<group>"; };
 		D5382919248A7C8A0012F90B /* body_effects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = body_effects.json; sourceTree = "<group>"; };
 		D538291A248A7C8A0012F90B /* volatile_oils.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = volatile_oils.json; sourceTree = "<group>"; };
 		D538291E248A81650012F90B /* DescriptorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorsTests.swift; sourceTree = "<group>"; };
-		D544005524701D1700C6263B /* PlantInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInformationModel.swift; sourceTree = "<group>"; };
-		D544005724701D2600C6263B /* GrowthInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowthInformationModel.swift; sourceTree = "<group>"; };
+		D544005524701D1700C6263B /* PlantInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoModel.swift; sourceTree = "<group>"; };
+		D544005724701D2600C6263B /* PlantGrowthInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGrowthInfoModel.swift; sourceTree = "<group>"; };
 		D544005924701D4800C6263B /* PlantUsesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUsesModel.swift; sourceTree = "<group>"; };
 		D544005B24701D5700C6263B /* PlantScienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantScienceModel.swift; sourceTree = "<group>"; };
-		D544005D24701D8200C6263B /* BodilyEffectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodilyEffectsModel.swift; sourceTree = "<group>"; };
-		D544005F24701D9C00C6263B /* PreparationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationsModel.swift; sourceTree = "<group>"; };
-		D544006224702CA500C6263B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		D544005D24701D8200C6263B /* PlantBodilyEffectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBodilyEffectsModel.swift; sourceTree = "<group>"; };
+		D544005F24701D9C00C6263B /* PlantPreparationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantPreparationsModel.swift; sourceTree = "<group>"; };
+		D544006224702CA500C6263B /* StringOperationsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOperationsHelper.swift; sourceTree = "<group>"; };
 		D544006424702F0800C6263B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D54DF92124B4B79000A993DB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		D552FE02249BC8140085784E /* preparation_methods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preparation_methods.json; sourceTree = "<group>"; };
@@ -145,6 +154,19 @@
 		D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
 		D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		D5A1555725F7BB7800E4CCDA /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		D5A1555F25F7BE6D00E4CCDA /* PlantRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRequest.swift; sourceTree = "<group>"; };
+		D5A1556425F7BFD000E4CCDA /* PlantNetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantNetworkRequestTests.swift; sourceTree = "<group>"; };
+		D5C8600625F6863100920DAC /* ModelParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
+		D5C8600C25F68E5200920DAC /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		D5C8601525F690F200920DAC /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
+		D5C8601A25F692B500920DAC /* CoreDataSpotlightPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSpotlightPlant.swift; sourceTree = "<group>"; };
+		D5C8602825F6A56400920DAC /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		D5C8604225F6AE1C00920DAC /* PlantDescipritonContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDescipritonContainer.swift; sourceTree = "<group>"; };
+		D5C8605125F6D60C00920DAC /* TitleAndDefinitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDefinitionModel.swift; sourceTree = "<group>"; };
+		D5C8605725F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupDictionaryFilenameEnums.swift; sourceTree = "<group>"; };
+		D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryContainer.swift; sourceTree = "<group>"; };
+		D5C8606425F6F79300920DAC /* PlantSpotlightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSpotlightItem.swift; sourceTree = "<group>"; };
 		D5E45FBB2493D0FC0070E9B1 /* plant_species.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plant_species.json; sourceTree = "<group>"; };
 		F87C5385821B4F2CD18E8F2E /* Pods-Herbal Encyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,8 +225,8 @@
 		D507B89E248166D7005B6751 /* Descriptors */ = {
 			isa = PBXGroup;
 			children = (
-				D5382916248A78E60012F90B /* DescriptorViewModel.swift */,
-				D507B89F24816701005B6751 /* DescriptorsViewController.swift */,
+				D5382916248A78E60012F90B /* DefinitionsViewModel.swift */,
+				D507B89F24816701005B6751 /* DefinitionsViewController.swift */,
 			);
 			path = Descriptors;
 			sourceTree = "<group>";
@@ -212,7 +234,10 @@
 		D5328BBF2480073100DE0B79 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D544006224702CA500C6263B /* StringOperationsHelper.swift */,
 				D5328BC02480075600DE0B79 /* ColourHelper.swift */,
+				D5C8600625F6863100920DAC /* ModelParser.swift */,
+				D5C8602825F6A56400920DAC /* DateHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -234,10 +259,8 @@
 				D5328BC624801DB600DE0B79 /* TitleAndImageCell.xib */,
 				D5328BC924801F7600DE0B79 /* LabelAndDescriptionCell.swift */,
 				D5328BCB24801FBA00DE0B79 /* LabelAndDescriptionCell.xib */,
-				D507B8A124816816005B6751 /* DescriptorTitleCell.swift */,
-				D507B8A32481685C005B6751 /* DescriptorTitleCell.xib */,
-				D507B8A524816950005B6751 /* DescriptorExplanationCell.swift */,
-				D507B8A72481699D005B6751 /* DescriptorExplanationCell.xib */,
+				D507B8A524816950005B6751 /* DescriptorCell.swift */,
+				D507B8A72481699D005B6751 /* DescriptorCell.xib */,
 				D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */,
 				D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */,
 			);
@@ -253,13 +276,16 @@
 			path = "JSON Stubs";
 			sourceTree = "<group>";
 		};
-		D535427A2465D7B5000046EB /* Models */ = {
+		D535427A2465D7B5000046EB /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				D5C8605025F6D5FD00920DAC /* Descriptors */,
+				D5C8601F25F6937C00920DAC /* CoreDataSaveModels */,
 				D572A66F24B61EB300A43F30 /* Plant */,
 				D572A67024B61EC100A43F30 /* Recipes */,
+				D5C8604225F6AE1C00920DAC /* PlantDescipritonContainer.swift */,
 			);
-			path = Models;
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 		D53687B524657C6E00CD7094 = {
@@ -287,7 +313,10 @@
 		D53687C024657C6E00CD7094 /* Herbal Encyclopedia */ = {
 			isa = PBXGroup;
 			children = (
-				D535427A2465D7B5000046EB /* Models */,
+				D5A1555625F7BB4C00E4CCDA /* Networking & File Reading */,
+				D5C8605625F6E5BC00920DAC /* Enums */,
+				D5C8600B25F68E3700920DAC /* AppContainer & Factories */,
+				D535427A2465D7B5000046EB /* Data Models */,
 				D53687F52465801100CD7094 /* Storyboards */,
 				D5380CEA24685C150095665A /* View Controllers & View Models */,
 				D53687C124657C6E00CD7094 /* AppDelegate.swift */,
@@ -296,7 +325,6 @@
 				D53687CE24657C6F00CD7094 /* LaunchScreen.storyboard */,
 				D53687D124657C6F00CD7094 /* Info.plist */,
 				D57F0F4424658608004A1C30 /* Custom Views */,
-				D53542712465CBBB000046EB /* Custom Cells */,
 				D544006124702C7C00C6263B /* UI Extensions */,
 				D53542772465CEA5000046EB /* JSON Stubs */,
 				D5328BBF2480073100DE0B79 /* Helpers */,
@@ -312,6 +340,7 @@
 				D538291E248A81650012F90B /* DescriptorsTests.swift */,
 				D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */,
 				D53687DC24657C6F00CD7094 /* Info.plist */,
+				D5A1556425F7BFD000E4CCDA /* PlantNetworkRequestTests.swift */,
 			);
 			path = "Herbal EncyclopediaTests";
 			sourceTree = "<group>";
@@ -323,14 +352,6 @@
 				D53687E724657C6F00CD7094 /* Info.plist */,
 			);
 			path = "Herbal EncyclopediaUITests";
-			sourceTree = "<group>";
-		};
-		D53687F324657F7200CD7094 /* Spotlight */ = {
-			isa = PBXGroup;
-			children = (
-				D5328BC224801D2800DE0B79 /* SpotlightViewControllerV2.swift */,
-			);
-			path = Spotlight;
 			sourceTree = "<group>";
 		};
 		D53687F424657F7D00CD7094 /* Search */ = {
@@ -353,7 +374,7 @@
 		D5380CEA24685C150095665A /* View Controllers & View Models */ = {
 			isa = PBXGroup;
 			children = (
-				D53687F324657F7200CD7094 /* Spotlight */,
+				D5C8601425F690DD00920DAC /* Plant */,
 				D507B89E248166D7005B6751 /* Descriptors */,
 				D53687F424657F7D00CD7094 /* Search */,
 				D572A66A24B61B8B00A43F30 /* Recipes */,
@@ -364,7 +385,6 @@
 		D544006124702C7C00C6263B /* UI Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D544006224702CA500C6263B /* ViewControllerExtensions.swift */,
 				D544006424702F0800C6263B /* UIViewExtensions.swift */,
 			);
 			path = "UI Extensions";
@@ -383,12 +403,13 @@
 			isa = PBXGroup;
 			children = (
 				D535427B2465D7D8000046EB /* Plant.swift */,
-				D544005524701D1700C6263B /* PlantInformationModel.swift */,
-				D544005724701D2600C6263B /* GrowthInformationModel.swift */,
+				D544005524701D1700C6263B /* PlantInfoModel.swift */,
+				D544005724701D2600C6263B /* PlantGrowthInfoModel.swift */,
 				D544005924701D4800C6263B /* PlantUsesModel.swift */,
 				D544005B24701D5700C6263B /* PlantScienceModel.swift */,
-				D544005D24701D8200C6263B /* BodilyEffectsModel.swift */,
-				D544005F24701D9C00C6263B /* PreparationsModel.swift */,
+				D544005D24701D8200C6263B /* PlantBodilyEffectsModel.swift */,
+				D544005F24701D9C00C6263B /* PlantPreparationsModel.swift */,
+				D5C8606425F6F79300920DAC /* PlantSpotlightItem.swift */,
 			);
 			path = Plant;
 			sourceTree = "<group>";
@@ -427,10 +448,62 @@
 		D57F0F4424658608004A1C30 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				D53542712465CBBB000046EB /* Custom Cells */,
 				D57F0F452465861B004A1C30 /* CustomImageView.swift */,
 				D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		D5A1555625F7BB4C00E4CCDA /* Networking & File Reading */ = {
+			isa = PBXGroup;
+			children = (
+				D5A1555725F7BB7800E4CCDA /* Request.swift */,
+				D5A1555F25F7BE6D00E4CCDA /* PlantRequest.swift */,
+			);
+			path = "Networking & File Reading";
+			sourceTree = "<group>";
+		};
+		D5C8600B25F68E3700920DAC /* AppContainer & Factories */ = {
+			isa = PBXGroup;
+			children = (
+				D5C8600C25F68E5200920DAC /* AppContainer.swift */,
+			);
+			path = "AppContainer & Factories";
+			sourceTree = "<group>";
+		};
+		D5C8601425F690DD00920DAC /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				D5328BC224801D2800DE0B79 /* PlantViewController.swift */,
+				D5C8601525F690F200920DAC /* PlantViewModel.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		D5C8601F25F6937C00920DAC /* CoreDataSaveModels */ = {
+			isa = PBXGroup;
+			children = (
+				D5C8601A25F692B500920DAC /* CoreDataSpotlightPlant.swift */,
+			);
+			path = CoreDataSaveModels;
+			sourceTree = "<group>";
+		};
+		D5C8605025F6D5FD00920DAC /* Descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				D5C8605125F6D60C00920DAC /* TitleAndDefinitionModel.swift */,
+				D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */,
+			);
+			path = Descriptors;
+			sourceTree = "<group>";
+		};
+		D5C8605625F6E5BC00920DAC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D5C8605725F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,12 +617,11 @@
 			files = (
 				D538291D248A7C8A0012F90B /* volatile_oils.json in Resources */,
 				D5328BCC24801FBA00DE0B79 /* LabelAndDescriptionCell.xib in Resources */,
-				D507B8A42481685C005B6751 /* DescriptorTitleCell.xib in Resources */,
 				D552FE03249BC8140085784E /* preparation_methods.json in Resources */,
 				D53687D024657C6F00CD7094 /* LaunchScreen.storyboard in Resources */,
 				D53542792465CF31000046EB /* herbs.json in Resources */,
 				D538291B248A7C8A0012F90B /* key_constituents.json in Resources */,
-				D507B8A82481699D005B6751 /* DescriptorExplanationCell.xib in Resources */,
+				D507B8A82481699D005B6751 /* DescriptorCell.xib in Resources */,
 				D53687CD24657C6F00CD7094 /* Assets.xcassets in Resources */,
 				D5E45FBC2493D0FC0070E9B1 /* plant_species.json in Resources */,
 				D53542762465CC0F000046EB /* WarningCell.xib in Resources */,
@@ -689,32 +761,43 @@
 				D572A67224B61EE600A43F30 /* RecipeModel.swift in Sources */,
 				D544005A24701D4800C6263B /* PlantUsesModel.swift in Sources */,
 				D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */,
+				D5A1556025F7BE6D00E4CCDA /* PlantRequest.swift in Sources */,
 				D544005C24701D5700C6263B /* PlantScienceModel.swift in Sources */,
-				D544005824701D2600C6263B /* GrowthInformationModel.swift in Sources */,
+				D544005824701D2600C6263B /* PlantGrowthInfoModel.swift in Sources */,
 				D53542742465CBE0000046EB /* WarningCell.swift in Sources */,
-				D5382917248A78E60012F90B /* DescriptorViewModel.swift in Sources */,
+				D5382917248A78E60012F90B /* DefinitionsViewModel.swift in Sources */,
 				D53687C224657C6E00CD7094 /* AppDelegate.swift in Sources */,
 				D5328BC12480075600DE0B79 /* ColourHelper.swift in Sources */,
 				D535427C2465D7D8000046EB /* Plant.swift in Sources */,
+				D5C8600725F6863100920DAC /* ModelParser.swift in Sources */,
 				D572A67A24B6258100A43F30 /* RecipeCategoryModel.swift in Sources */,
+				D5C8605825F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift in Sources */,
 				D53687C424657C6E00CD7094 /* SceneDelegate.swift in Sources */,
-				D507B8A224816816005B6751 /* DescriptorTitleCell.swift in Sources */,
+				D5C8606025F6EACC00920DAC /* DictionaryContainer.swift in Sources */,
 				D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */,
-				D544005624701D1700C6263B /* PlantInformationModel.swift in Sources */,
-				D5328BC324801D2800DE0B79 /* SpotlightViewControllerV2.swift in Sources */,
+				D5A1555825F7BB7800E4CCDA /* Request.swift in Sources */,
+				D544005624701D1700C6263B /* PlantInfoModel.swift in Sources */,
+				D5C8600D25F68E5200920DAC /* AppContainer.swift in Sources */,
+				D5328BC324801D2800DE0B79 /* PlantViewController.swift in Sources */,
 				D572A66E24B61BD300A43F30 /* RecipesViewModel.swift in Sources */,
 				D572A67824B6201A00A43F30 /* RecipesCategoriesContainerModel.swift in Sources */,
-				D544006024701D9C00C6263B /* PreparationsModel.swift in Sources */,
+				D5C8606525F6F79300920DAC /* PlantSpotlightItem.swift in Sources */,
+				D544006024701D9C00C6263B /* PlantPreparationsModel.swift in Sources */,
+				D5C8604325F6AE1C00920DAC /* PlantDescipritonContainer.swift in Sources */,
 				D5328BCA24801F7600DE0B79 /* LabelAndDescriptionCell.swift in Sources */,
-				D507B8A024816701005B6751 /* DescriptorsViewController.swift in Sources */,
+				D5C8601B25F692B500920DAC /* CoreDataSpotlightPlant.swift in Sources */,
+				D507B8A024816701005B6751 /* DefinitionsViewController.swift in Sources */,
+				D5C8605225F6D60C00920DAC /* TitleAndDefinitionModel.swift in Sources */,
 				D5328BC524801D9500DE0B79 /* TitleAndImageCell.swift in Sources */,
-				D507B8A624816950005B6751 /* DescriptorExplanationCell.swift in Sources */,
+				D5C8601625F690F200920DAC /* PlantViewModel.swift in Sources */,
+				D507B8A624816950005B6751 /* DescriptorCell.swift in Sources */,
 				D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */,
 				D54DF92224B4B79000A993DB /* SearchViewModel.swift in Sources */,
 				D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */,
-				D544006324702CA500C6263B /* ViewControllerExtensions.swift in Sources */,
+				D544006324702CA500C6263B /* StringOperationsHelper.swift in Sources */,
+				D5C8602925F6A56400920DAC /* DateHelper.swift in Sources */,
 				D572A66C24B61BB200A43F30 /* RecipesViewController.swift in Sources */,
-				D544005E24701D8200C6263B /* BodilyEffectsModel.swift in Sources */,
+				D544005E24701D8200C6263B /* PlantBodilyEffectsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +807,7 @@
 			files = (
 				D538291F248A81650012F90B /* DescriptorsTests.swift in Sources */,
 				D572A67C24B626B600A43F30 /* RecipeModelTestCase.swift in Sources */,
+				D5A1556525F7BFD000E4CCDA /* PlantNetworkRequestTests.swift in Sources */,
 				D53687DB24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift in Sources */,
 				D537947624682A3400354021 /* PlantModelTestCase.swift in Sources */,
 			);

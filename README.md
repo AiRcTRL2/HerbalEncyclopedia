@@ -1,6 +1,6 @@
 # HerbalEncyclopedia
 
-## Herbal Encyclopedia is a personal app project in mid-stage development. It is an application for those of us who love herbs, herbal science and understanding their effects on our bodies. It seeks to provide knowledge and methodology in a pragmatic, clean and pleasant manner.
+### Herbal Encyclopedia is a personal app project in mid-stage development. It is an application for those of us who love herbs, herbal science and understanding their effects on our bodies. It seeks to provide knowledge and methodology in a pragmatic, clean and pleasant manner.
 
 ### Roadmap of development prior to release:
  - Brainstorm & Implement a colour, brand & theme to apply across the app

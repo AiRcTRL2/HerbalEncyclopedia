@@ -10,16 +10,18 @@ import XCTest
 
 @testable import Herbal_Encyclopedia
 class PlantModelTestCase: XCTestCase {
-    
     var plants: [Plant]?
     var firstPlant: Plant?
     
     override func setUpWithError() throws {
         super.setUp()
         
-        let plantContainer: PlantContainer? = ModelParser.parseJson("herbs")
-        self.plants = plantContainer?.data
-        self.firstPlant = plants?[0]
+        let plantRequest = PlantRequest()
+        plantRequest.configure(requestType: .file, urlOrFileName: "herbs")
+        
+        plants = plantRequest.fetchPlants()
+        
+        self.firstPlant = plants?.first
         
     }
 

@@ -10,29 +10,33 @@ import XCTest
 
 @testable import Herbal_Encyclopedia
 class DescriptorsTests: XCTestCase {
-    var descriptorModel: DescriptorViewModel!
+    var descriptorModel: DefinitionsViewModel!
+    var plant: Plant?
     
     override func setUpWithError() throws {
         super.setUp()
-        descriptorModel = DescriptorViewModel(pageTitle: "test", jsonFileIdentifier: "body_effects", descriptorTitles: ["Antipasmodic"], descriptorExplanations: nil)
+        let networkRequest: PlantRequest = PlantRequest()
+        networkRequest.configure(requestType: .file, urlOrFileName: "herbs")
+        
+        let plants = networkRequest.fetchPlants()?.filter { $0.id == 1}
+        plant = plants?.first
+        
+        guard let plant = plant else {
+            return
+        }
+        
+        descriptorModel = AppDelegate.appContainer.buildDescriptorViewModel()
+        descriptorModel.configure(pageTitle: "test", definitionHeadings: ["Antipasmodic"], describedPlant: plant)
     }
 
     override func tearDownWithError() throws {
         super.tearDown()
         descriptorModel = nil
+        plant = nil
     }
 
-    func testExample() throws {
-        descriptorModel.parseExplanationsFromTitles()
-        print(descriptorModel.descriptorExplanations as Any)
-        XCTAssert(!descriptorModel.descriptorExplanations!.isEmpty)
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testDefinitionFound() throws {
+        XCTAssert(descriptorModel.tableViewDataSource.first?.description == "An antipasmodic is an agent which helps to reduce muscle spasms.")
     }
 
 }

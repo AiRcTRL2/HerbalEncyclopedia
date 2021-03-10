@@ -11,22 +11,29 @@ import CoreData
 
 /// The app container is responsbile for building the viewModels throughout the app. It should be propagated to viewControllers as needed. ViewControllers should only further propagate required methods or shared data from the app container
 class AppContainer {
+    // MARK: Shared data properties
     private let sharedLookupDictionary: [String: String]
+    
+    // MARK: Shared networking objects
+    private let plantRequest: PlantRequest
     
     init() {
         sharedLookupDictionary = AppContainer.buildLookupDictionary()
+        
+        let plantRequest: PlantRequest = PlantRequest()
+        plantRequest.configure(requestType: .file, urlOrFileName: "herbs")
+        self.plantRequest = plantRequest
     }
 
     /// Builds a plant view model
     func buildPlantViewModel() -> PlantViewModel {
-        let request: PlantRequest = PlantRequest()
-        request.configure(requestType: .file, urlOrFileName: "herbs")
-        
-        let data = request.fetchPlants()
-        
-        let plantViewModel = PlantViewModel(plants: data ?? [])
-        
-        return plantViewModel
+        let data = plantRequest.fetchPlants()
+        return PlantViewModel(plants: data ?? [])
+    }
+    
+    func buildSearchViewModel() -> SearchViewModel {
+        let data = plantRequest.fetchPlants()
+        return SearchViewModel(plants: data ?? [])
     }
     
     /// Builds a Descriptor view model, providing explanations for a list of titles

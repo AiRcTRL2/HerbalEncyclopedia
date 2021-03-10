@@ -12,22 +12,25 @@ import Foundation
 /// It parses definitions from a look-up dictionaries for terms provided to it in the titlesNeedingDescriptions parameter and combines the results into a PlantDescriptorModel that serve a data source for a tableView.
 class DefinitionsViewModel {
     /// The view title
-    var pageTitle: String
+    var pageTitle: String = ""
     /// The list of strings requiring a definition
-    var descriptorTitles: [String]
+    var descriptorTitles: [String] = []
     /// The plant this view model is describing
-    var plant: Plant
+    var plant: Plant?
     /// A reference to the shared lookup dictionary for parsing definitions
     let lookupDictionary: [String: String]
 
     /// Holds data ready for use by a tableView
     var tableViewDataSource: [TitleAndDefinitionModel] = []
     
-    init(pageTitle: String, titlesNeedingDescriptions: [String], lookupDictionary: [String: String], plant: Plant) {
-        self.pageTitle = pageTitle
-        self.descriptorTitles = titlesNeedingDescriptions
+    init(lookupDictionary: [String: String]) {
         self.lookupDictionary = lookupDictionary
-        self.plant = plant
+    }
+    
+    func configure(pageTitle: String, definitionHeadings: [String], describedPlant: Plant) {
+        self.pageTitle = pageTitle
+        self.descriptorTitles = definitionHeadings
+        self.plant = describedPlant
         self.parseExplanationsFromTitles()
     }
     
@@ -44,7 +47,7 @@ class DefinitionsViewModel {
             }
             
             // find a plant specific description for the term
-            if let foundPlantSpecificTitle = plant.plantAddsDescriptionFor[title] {
+            if let foundPlantSpecificTitle = plant?.plantAddsDescriptionFor[title] {
                 stringBuilder.isEmpty ?
                     stringBuilder.append(foundPlantSpecificTitle) : stringBuilder.append("\n\n\(foundPlantSpecificTitle)")
             }

@@ -25,7 +25,7 @@ class Request {
         self.url = urlOrFileName
     }
     
-    func request<T: Decodable>() -> T? {
+    func request() -> Data? {
         switch isFileOrNetworkingRequest {
         case .file:
             return fileRequest()
@@ -34,11 +34,20 @@ class Request {
         }
     }
     
-    private func networkRequest<T: Decodable>() -> T? {
+    private func networkRequest() -> Data? {
         nil
     }
     
-    private func fileRequest<T: Decodable>() -> T? {
-        ModelParser.parseJson(url)
+    private func fileRequest() -> Data? {
+        if let file = Bundle.main.url(forResource: url, withExtension: "json") {
+            do {
+                return try Data(contentsOf: file, options: .mappedIfSafe)
+            } catch (let err) {
+                print("Error fetching the data resource from file \(url)")
+                print(err)
+            }
+        }
+        
+        return nil
     }
 }

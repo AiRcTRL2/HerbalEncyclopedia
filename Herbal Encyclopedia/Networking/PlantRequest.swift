@@ -12,19 +12,17 @@ protocol PlantRequestProtocol {
     func fetchPlants() -> [Plant]?
 }
 
-struct PlantRequest: PlantRequestProtocol {
-    let request = Request()
-    
+class PlantRequest: Request, PlantRequestProtocol {
     func fetchPlants() -> [Plant]? {
-        request.configure(requestType: .file, urlOrFileName: "herbs")
+        configure(requestType: .file, urlOrFileName: "herbs")
         
-        guard let plants: [Plant]? = request.request() else {
+        let data = request()
+        
+        guard data != nil, let plants: PlantContainer = ModelParser.parseJson(data!) else {
             print("An error occurred when attempting to fetch resource")
             return nil
         }
         
-        return plants
+        return plants.data
     }
-    
-    
 }

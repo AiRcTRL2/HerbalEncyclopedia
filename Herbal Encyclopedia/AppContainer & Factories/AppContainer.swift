@@ -26,13 +26,8 @@ class AppContainer {
     }
     
     /// Builds a Descriptor view model, providing explanations for a list of titles
-    func buildDescriptorViewModel(pageTitle: String, titlesNeedingDescriptions: [String], plant: Plant) -> DefinitionsViewModel {
-        DefinitionsViewModel(
-            pageTitle: pageTitle,
-            titlesNeedingDescriptions: titlesNeedingDescriptions,
-            lookupDictionary: sharedLookupDictionary,
-            plant: plant
-        )
+    func buildDescriptorViewModel() -> DefinitionsViewModel {
+        DefinitionsViewModel(lookupDictionary: sharedLookupDictionary)
     }
     
     /// Prepares the app for dictionary lookups by combining different dictionaries into one

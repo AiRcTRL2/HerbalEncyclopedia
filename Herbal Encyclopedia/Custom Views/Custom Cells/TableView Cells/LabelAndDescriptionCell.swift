@@ -18,8 +18,6 @@ class LabelAndDescriptionCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var navigateForward: UIButton!
     
-    var descriptionList: [String] = []
-    var expandedDescription: String = ""
     var indexPath: IndexPath?
     
     weak var delegate: LabelAndDescriptionCellDelegate?
@@ -41,13 +39,20 @@ class LabelAndDescriptionCell: UITableViewCell {
     }
     
     
+    func configure(indexPath: IndexPath, spotlightItem: PlantSpotlightItem, delegate: LabelAndDescriptionCellDelegate) {
+        self.indexPath = indexPath
+        self.delegate = delegate
+        
+        configureText(spotlightItem.title, spotlightItem.text)
+        configureDisclosureIndicator(spotlightItem.isExpansible)
+    }
+    
     /// Configures the cell's text and underlying data
     /// - Parameters:
     ///   - cellTitle: The data being addressed
     ///   - descriptionLabelText: A list of strings representing the title's main points
-    func configureText(_ cellTitle: String?, _ descriptionLabelText: [String]?) {
+    private func configureText(_ cellTitle: String?, _ descriptionLabelText: [String]?) {
         title.text = cellTitle
-        descriptionList = descriptionLabelText ?? []
         
         if descriptionLabelText?.count == 1 {
             descriptionLabel.text = descriptionLabelText?.first
@@ -60,7 +65,7 @@ class LabelAndDescriptionCell: UITableViewCell {
     
     /// Configures if the cell allows navigation or not
     /// - Parameter isExpansible: A bool indicating whether or not the cell should allow navigation
-    func configureDisclosureIndicator(_ isExpansible: Bool?) {
+    private func configureDisclosureIndicator(_ isExpansible: Bool?) {
         self.navigateForward.isHidden = isExpansible == true ? false : true
     }
 

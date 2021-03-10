@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+protocol DictionaryRequestProtocol {
+    func fetchDictionary(url: String) -> [String: String]?
+}
+
+class DictionaryRequest: Request, DictionaryRequestProtocol {
+    func fetchDictionary(url: String) -> [String : String]? {
+        configure(requestType: .file, urlOrFileName: url)
+        
+        let data = request()
+        guard data != nil, let dictionaryContainer: DictionaryContainer? = ModelParser.parseJson(data!) else {
+            print("Failed to parse dictionary from data for url: \(url)")
+            return nil
+        }
+        
+        return dictionaryContainer?.data
+    }
+    
+    
+}

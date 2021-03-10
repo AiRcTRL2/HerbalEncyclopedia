@@ -36,6 +36,13 @@ class AppContainer {
         return SearchViewModel(plants: data ?? [])
     }
     
+    func buildRecipesViewModel() -> RecipesViewModel {
+        let request = RecipesRequest()
+        let categories = request.fetchRecipes()
+        
+        return RecipesViewModel(categories: categories)
+    }
+    
     /// Builds a Descriptor view model, providing explanations for a list of titles
     func buildDescriptorViewModel() -> DefinitionsViewModel {
         DefinitionsViewModel(lookupDictionary: sharedLookupDictionary)

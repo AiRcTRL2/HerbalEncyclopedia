@@ -12,39 +12,47 @@ import UIKit
 class RecipesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    let recipeCategories = RecipesViewModel()
+    var appContainer = AppDelegate.appContainer
+    var recipeCategories: RecipesViewModel?
     
-    let cell = UINib(nibName: "SearchTableViewCell", bundle: nil)
+    let cell = UINib(nibName: "ImageAndTitleTableViewCell", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        recipeCategories = appContainer.buildRecipesViewModel()
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(cell, forCellReuseIdentifier: "searchCell")
+        tableView.register(cell, forCellReuseIdentifier: "imageAndTitleTableViewCell")
     }
 }
 
 extension RecipesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        recipeCategories.categories?.data.count ?? 0
+        recipeCategories?.categories?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as! SearchTableViewCell
-        cell.searchItemText?.text = recipeCategories.categories?.data[indexPath.row].name.capitalized
-        cell.searchImage.image = nil
-        cell.delegate = self
-        cell.cellIndex = indexPath
+        let cell = tableView.dequeueReusableCell(withIdentifier: "imageAndTitleTableViewCell") as! ImageAndTitleTableViewCell
+        
+        guard let model = recipeCategories?.categories?[indexPath.row] else {
+            return UITableViewCell()
+        }
+        
+        cell.configure(for: model)
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        forwardNavigationPressed(indexPath: indexPath)
+    }
 }
 
-extension RecipesViewController: SearchTableViewCellDelegate {
-    func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant?) {
-        print("pressed")
+extension RecipesViewController {
+    func forwardNavigationPressed(indexPath: IndexPath) {
+        print("presed")
     }
-    
     
 }

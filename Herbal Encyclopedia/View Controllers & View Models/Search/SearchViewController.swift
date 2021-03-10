@@ -19,16 +19,17 @@ class SearchViewController: UIViewController {
     weak var appContainer = AppDelegate.appContainer
     var searchViewModel: SearchViewModel?
     
-    let searchTableViewCellNib = UINib(nibName: "SearchTableViewCell", bundle: nil)
+    let searchTableViewCellNib = UINib(nibName: "ImageAndTitleTableViewCell", bundle: nil)
     
     // MARK: View Controller Setup
     override func viewDidLoad() {
         super.viewDidLoad()
         searchViewModel = appContainer?.buildSearchViewModel()
+        searchViewModel?.configure(delegate: self)
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(searchTableViewCellNib, forCellReuseIdentifier: "searchCell")
+        tableView.register(searchTableViewCellNib, forCellReuseIdentifier: "imageAndTitleTableViewCell")
         
         noPlantsFoundLabel.isHidden = true
         
@@ -60,65 +61,51 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as! SearchTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "imageAndTitleTableViewCell") as! ImageAndTitleTableViewCell
         
         guard searchViewModel != nil else {
             return UITableViewCell()
         }
         
-        // determine which data source should populate this list
-        cell.plant = searchViewModel!.plantsNarrowedBySearchString.count > 0 ? searchViewModel!.plantsNarrowedBySearchString[indexPath.row] : searchViewModel!.plants[indexPath.row]
+        let plant = searchViewModel!.plantsNarrowedBySearchString.count > 0 ? searchViewModel!.plantsNarrowedBySearchString[indexPath.row] : searchViewModel!.plants[indexPath.row]
         
-        // cell setup
-        cell.delegate = self
-        cell.cellIndex = indexPath
-        cell.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-        cell.configure()
+
+        cell.configure(for: plant)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard searchViewModel != nil else {
+        guard appContainer != nil else {
             return
         }
         
-        // add action on cell tap
-        let plant = searchViewModel!.plantsNarrowedBySearchString.count > 0 ? searchViewModel!.plantsNarrowedBySearchString[indexPath.row] : searchViewModel!.plants[indexPath.row]
-        
-        forwardNavigationPressed(cellIndexPath: indexPath, plant: plant)
-        
+        searchViewModel?.forwardNavigationPressed(
+            indexPath: indexPath,
+            viewModelBuilder: appContainer!.buildPlantViewModel
+        )
     }
     
 }
 
-// MARK: Cell tap delegate
-extension SearchViewController: SearchTableViewCellDelegate {
-    func forwardNavigationPressed(cellIndexPath: IndexPath, plant: Plant?) {
-        if let plantUnwrapped = plant, let appContainer = appContainer {
-            let viewModel = appContainer.buildPlantViewModel()
-            let plantModel = CoreDataSpotlightPlant()
-            plantModel.savedPlant = plantUnwrapped
-            viewModel.spotlightPlant = plantModel
-            
-            presentPlantFromSearchController(plantViewModel: viewModel)
-        }
+extension SearchViewController: SearchViewModelDelegate {
+    func navigateToPlant(with viewModel: PlantViewModel) {
+        presentPlantFromSearchController(plantViewModel: viewModel)
+    }
+    
+    func dataUpdated() {
+        updateSearchResults()
     }
 }
 
-// MARK: Additional functions for search & view update
 extension SearchViewController {
     
     /// Call back function for textField observer for when text has changed
     @objc func textFieldDidChange() {
-        searchViewModel?.filterList(string: searchTextField.text?.lowercased() ?? "") { completion in
-            if completion {
-                updateViews()
-            }
-        }
+        searchViewModel?.filterList(string: searchTextField.text?.lowercased() ?? "")
     }
     
-    func updateViews() {
+    func updateSearchResults() {
         if searchViewModel?.plantsNarrowedBySearchString.count == 0 && searchTextField.text?.isEmpty == false {
             tableView.isHidden = true
             noPlantsFoundLabel.isHidden = false

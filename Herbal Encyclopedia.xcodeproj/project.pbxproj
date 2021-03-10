@@ -53,11 +53,10 @@
 		D572A67624B61F6B00A43F30 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = D572A67524B61F6B00A43F30 /* recipes.json */; };
 		D572A67824B6201A00A43F30 /* RecipesCategoriesContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67724B6201A00A43F30 /* RecipesCategoriesContainerModel.swift */; };
 		D572A67A24B6258100A43F30 /* RecipeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67924B6258100A43F30 /* RecipeCategoryModel.swift */; };
-		D572A67C24B626B600A43F30 /* RecipeModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */; };
 		D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F452465861B004A1C30 /* CustomImageView.swift */; };
 		D57F0F4824658DD9004A1C30 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */; };
-		D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */; };
-		D58C25D3248EACE800CBCE67 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */; };
+		D58C25D1248EACB400CBCE67 /* ImageAndTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C25D0248EACB400CBCE67 /* ImageAndTitleTableViewCell.swift */; };
+		D58C25D3248EACE800CBCE67 /* ImageAndTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58C25D2248EACE800CBCE67 /* ImageAndTitleTableViewCell.xib */; };
 		D5A1555825F7BB7800E4CCDA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1555725F7BB7800E4CCDA /* Request.swift */; };
 		D5A1556025F7BE6D00E4CCDA /* PlantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1555F25F7BE6D00E4CCDA /* PlantRequest.swift */; };
 		D5A1556525F7BFD000E4CCDA /* PlantNetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1556425F7BFD000E4CCDA /* PlantNetworkRequestTests.swift */; };
@@ -66,11 +65,13 @@
 		D5C8601625F690F200920DAC /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8601525F690F200920DAC /* PlantViewModel.swift */; };
 		D5C8601B25F692B500920DAC /* CoreDataSpotlightPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8601A25F692B500920DAC /* CoreDataSpotlightPlant.swift */; };
 		D5C8602925F6A56400920DAC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8602825F6A56400920DAC /* DateHelper.swift */; };
-		D5C8604325F6AE1C00920DAC /* PlantDescipritonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8604225F6AE1C00920DAC /* PlantDescipritonContainer.swift */; };
 		D5C8605225F6D60C00920DAC /* TitleAndDefinitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8605125F6D60C00920DAC /* TitleAndDefinitionModel.swift */; };
 		D5C8605825F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8605725F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift */; };
 		D5C8606025F6EACC00920DAC /* DictionaryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */; };
 		D5C8606525F6F79300920DAC /* PlantSpotlightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8606425F6F79300920DAC /* PlantSpotlightItem.swift */; };
+		D5CC051825F9105200ED1921 /* DictionaryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC051725F9105200ED1921 /* DictionaryRequest.swift */; };
+		D5CC052025F92D3600ED1921 /* RecipesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC051F25F92D3600ED1921 /* RecipesRequest.swift */; };
+		D5CC052D25F92F1300ED1921 /* RecipesNetworkAndModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC052C25F92F1300ED1921 /* RecipesNetworkAndModelTests.swift */; };
 		D5E45FBC2493D0FC0070E9B1 /* plant_species.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E45FBB2493D0FC0070E9B1 /* plant_species.json */; };
 /* End PBXBuildFile section */
 
@@ -149,11 +150,10 @@
 		D572A67524B61F6B00A43F30 /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		D572A67724B6201A00A43F30 /* RecipesCategoriesContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCategoriesContainerModel.swift; sourceTree = "<group>"; };
 		D572A67924B6258100A43F30 /* RecipeCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryModel.swift; sourceTree = "<group>"; };
-		D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModelTestCase.swift; sourceTree = "<group>"; };
 		D57F0F452465861B004A1C30 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		D57F0F4724658DD9004A1C30 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
-		D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		D58C25D0248EACB400CBCE67 /* ImageAndTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTitleTableViewCell.swift; sourceTree = "<group>"; };
+		D58C25D2248EACE800CBCE67 /* ImageAndTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndTitleTableViewCell.xib; sourceTree = "<group>"; };
 		D5A1555725F7BB7800E4CCDA /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		D5A1555F25F7BE6D00E4CCDA /* PlantRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRequest.swift; sourceTree = "<group>"; };
 		D5A1556425F7BFD000E4CCDA /* PlantNetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantNetworkRequestTests.swift; sourceTree = "<group>"; };
@@ -162,11 +162,13 @@
 		D5C8601525F690F200920DAC /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
 		D5C8601A25F692B500920DAC /* CoreDataSpotlightPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSpotlightPlant.swift; sourceTree = "<group>"; };
 		D5C8602825F6A56400920DAC /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
-		D5C8604225F6AE1C00920DAC /* PlantDescipritonContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDescipritonContainer.swift; sourceTree = "<group>"; };
 		D5C8605125F6D60C00920DAC /* TitleAndDefinitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndDefinitionModel.swift; sourceTree = "<group>"; };
 		D5C8605725F6E5D600920DAC /* LookupDictionaryFilenameEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupDictionaryFilenameEnums.swift; sourceTree = "<group>"; };
 		D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryContainer.swift; sourceTree = "<group>"; };
 		D5C8606425F6F79300920DAC /* PlantSpotlightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSpotlightItem.swift; sourceTree = "<group>"; };
+		D5CC051725F9105200ED1921 /* DictionaryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRequest.swift; sourceTree = "<group>"; };
+		D5CC051F25F92D3600ED1921 /* RecipesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRequest.swift; sourceTree = "<group>"; };
+		D5CC052C25F92F1300ED1921 /* RecipesNetworkAndModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesNetworkAndModelTests.swift; sourceTree = "<group>"; };
 		D5E45FBB2493D0FC0070E9B1 /* plant_species.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plant_species.json; sourceTree = "<group>"; };
 		F87C5385821B4F2CD18E8F2E /* Pods-Herbal Encyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herbal Encyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-Herbal Encyclopedia/Pods-Herbal Encyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -261,8 +263,8 @@
 				D5328BCB24801FBA00DE0B79 /* LabelAndDescriptionCell.xib */,
 				D507B8A524816950005B6751 /* DescriptorCell.swift */,
 				D507B8A72481699D005B6751 /* DescriptorCell.xib */,
-				D58C25D0248EACB400CBCE67 /* SearchTableViewCell.swift */,
-				D58C25D2248EACE800CBCE67 /* SearchTableViewCell.xib */,
+				D58C25D0248EACB400CBCE67 /* ImageAndTitleTableViewCell.swift */,
+				D58C25D2248EACE800CBCE67 /* ImageAndTitleTableViewCell.xib */,
 			);
 			path = "TableView Cells";
 			sourceTree = "<group>";
@@ -279,11 +281,11 @@
 		D535427A2465D7B5000046EB /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				D5C8605025F6D5FD00920DAC /* Descriptors */,
 				D5C8601F25F6937C00920DAC /* CoreDataSaveModels */,
+				D5C8605025F6D5FD00920DAC /* Definitions */,
 				D572A66F24B61EB300A43F30 /* Plant */,
 				D572A67024B61EC100A43F30 /* Recipes */,
-				D5C8604225F6AE1C00920DAC /* PlantDescipritonContainer.swift */,
+				D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -313,10 +315,9 @@
 		D53687C024657C6E00CD7094 /* Herbal Encyclopedia */ = {
 			isa = PBXGroup;
 			children = (
-				D5A1555625F7BB4C00E4CCDA /* Networking & File Reading */,
-				D5C8605625F6E5BC00920DAC /* Enums */,
-				D5C8600B25F68E3700920DAC /* AppContainer & Factories */,
+				D5C8600B25F68E3700920DAC /* Container & Factories */,
 				D535427A2465D7B5000046EB /* Data Models */,
+				D5C8605625F6E5BC00920DAC /* Enums */,
 				D53687F52465801100CD7094 /* Storyboards */,
 				D5380CEA24685C150095665A /* View Controllers & View Models */,
 				D53687C124657C6E00CD7094 /* AppDelegate.swift */,
@@ -326,6 +327,7 @@
 				D53687D124657C6F00CD7094 /* Info.plist */,
 				D57F0F4424658608004A1C30 /* Custom Views */,
 				D544006124702C7C00C6263B /* UI Extensions */,
+				D5A1555625F7BB4C00E4CCDA /* Networking */,
 				D53542772465CEA5000046EB /* JSON Stubs */,
 				D5328BBF2480073100DE0B79 /* Helpers */,
 			);
@@ -337,10 +339,10 @@
 			children = (
 				D53687DA24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift */,
 				D537947524682A3400354021 /* PlantModelTestCase.swift */,
-				D538291E248A81650012F90B /* DescriptorsTests.swift */,
-				D572A67B24B626B600A43F30 /* RecipeModelTestCase.swift */,
-				D53687DC24657C6F00CD7094 /* Info.plist */,
 				D5A1556425F7BFD000E4CCDA /* PlantNetworkRequestTests.swift */,
+				D5CC052C25F92F1300ED1921 /* RecipesNetworkAndModelTests.swift */,
+				D538291E248A81650012F90B /* DescriptorsTests.swift */,
+				D53687DC24657C6F00CD7094 /* Info.plist */,
 			);
 			path = "Herbal EncyclopediaTests";
 			sourceTree = "<group>";
@@ -455,21 +457,23 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
-		D5A1555625F7BB4C00E4CCDA /* Networking & File Reading */ = {
+		D5A1555625F7BB4C00E4CCDA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				D5A1555725F7BB7800E4CCDA /* Request.swift */,
 				D5A1555F25F7BE6D00E4CCDA /* PlantRequest.swift */,
+				D5CC051725F9105200ED1921 /* DictionaryRequest.swift */,
+				D5CC051F25F92D3600ED1921 /* RecipesRequest.swift */,
 			);
-			path = "Networking & File Reading";
+			path = Networking;
 			sourceTree = "<group>";
 		};
-		D5C8600B25F68E3700920DAC /* AppContainer & Factories */ = {
+		D5C8600B25F68E3700920DAC /* Container & Factories */ = {
 			isa = PBXGroup;
 			children = (
 				D5C8600C25F68E5200920DAC /* AppContainer.swift */,
 			);
-			path = "AppContainer & Factories";
+			path = "Container & Factories";
 			sourceTree = "<group>";
 		};
 		D5C8601425F690DD00920DAC /* Plant */ = {
@@ -489,13 +493,12 @@
 			path = CoreDataSaveModels;
 			sourceTree = "<group>";
 		};
-		D5C8605025F6D5FD00920DAC /* Descriptors */ = {
+		D5C8605025F6D5FD00920DAC /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
 				D5C8605125F6D60C00920DAC /* TitleAndDefinitionModel.swift */,
-				D5C8605F25F6EACC00920DAC /* DictionaryContainer.swift */,
 			);
-			path = Descriptors;
+			path = Definitions;
 			sourceTree = "<group>";
 		};
 		D5C8605625F6E5BC00920DAC /* Enums */ = {
@@ -628,7 +631,7 @@
 				D5328BC724801DB600DE0B79 /* TitleAndImageCell.xib in Resources */,
 				D538291C248A7C8A0012F90B /* body_effects.json in Resources */,
 				D53687CB24657C6E00CD7094 /* Main.storyboard in Resources */,
-				D58C25D3248EACE800CBCE67 /* SearchTableViewCell.xib in Resources */,
+				D58C25D3248EACE800CBCE67 /* ImageAndTitleTableViewCell.xib in Resources */,
 				D572A67624B61F6B00A43F30 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -776,14 +779,15 @@
 				D5C8606025F6EACC00920DAC /* DictionaryContainer.swift in Sources */,
 				D544006524702F0800C6263B /* UIViewExtensions.swift in Sources */,
 				D5A1555825F7BB7800E4CCDA /* Request.swift in Sources */,
+				D5CC052025F92D3600ED1921 /* RecipesRequest.swift in Sources */,
 				D544005624701D1700C6263B /* PlantInfoModel.swift in Sources */,
 				D5C8600D25F68E5200920DAC /* AppContainer.swift in Sources */,
 				D5328BC324801D2800DE0B79 /* PlantViewController.swift in Sources */,
+				D5CC051825F9105200ED1921 /* DictionaryRequest.swift in Sources */,
 				D572A66E24B61BD300A43F30 /* RecipesViewModel.swift in Sources */,
 				D572A67824B6201A00A43F30 /* RecipesCategoriesContainerModel.swift in Sources */,
 				D5C8606525F6F79300920DAC /* PlantSpotlightItem.swift in Sources */,
 				D544006024701D9C00C6263B /* PlantPreparationsModel.swift in Sources */,
-				D5C8604325F6AE1C00920DAC /* PlantDescipritonContainer.swift in Sources */,
 				D5328BCA24801F7600DE0B79 /* LabelAndDescriptionCell.swift in Sources */,
 				D5C8601B25F692B500920DAC /* CoreDataSpotlightPlant.swift in Sources */,
 				D507B8A024816701005B6751 /* DefinitionsViewController.swift in Sources */,
@@ -793,7 +797,7 @@
 				D507B8A624816950005B6751 /* DescriptorCell.swift in Sources */,
 				D57F0F462465861B004A1C30 /* CustomImageView.swift in Sources */,
 				D54DF92224B4B79000A993DB /* SearchViewModel.swift in Sources */,
-				D58C25D1248EACB400CBCE67 /* SearchTableViewCell.swift in Sources */,
+				D58C25D1248EACB400CBCE67 /* ImageAndTitleTableViewCell.swift in Sources */,
 				D544006324702CA500C6263B /* StringOperationsHelper.swift in Sources */,
 				D5C8602925F6A56400920DAC /* DateHelper.swift in Sources */,
 				D572A66C24B61BB200A43F30 /* RecipesViewController.swift in Sources */,
@@ -805,8 +809,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CC052D25F92F1300ED1921 /* RecipesNetworkAndModelTests.swift in Sources */,
 				D538291F248A81650012F90B /* DescriptorsTests.swift in Sources */,
-				D572A67C24B626B600A43F30 /* RecipeModelTestCase.swift in Sources */,
 				D5A1556525F7BFD000E4CCDA /* PlantNetworkRequestTests.swift in Sources */,
 				D53687DB24657C6F00CD7094 /* Herbal_EncyclopediaTests.swift in Sources */,
 				D537947624682A3400354021 /* PlantModelTestCase.swift in Sources */,

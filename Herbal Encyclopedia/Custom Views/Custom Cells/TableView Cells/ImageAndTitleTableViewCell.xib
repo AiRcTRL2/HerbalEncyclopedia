@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="ova-a9-Mwn" customClass="SearchTableViewCell" customModule="Herbal_Encyclopedia" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageAndTitleTableViewCell" id="ova-a9-Mwn" customClass="ImageAndTitleTableViewCell" customModule="Herbal_Encyclopedia" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ova-a9-Mwn" id="cdl-MX-dEJ">
@@ -31,7 +33,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yarrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-eZ-aHH" userLabel="Item Name">
-                                <rect key="frame" x="93" y="30.5" width="64.5" height="27"/>
+                                <rect key="frame" x="93" y="30.5" width="65" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,7 +50,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="hpo-yO-n13" secondAttribute="trailing" id="CH4-W9-1bY"/>
                             <constraint firstItem="rBX-PO-DdA" firstAttribute="centerY" secondItem="oQa-8u-cab" secondAttribute="centerY" id="LHO-17-RAh"/>
@@ -69,14 +71,22 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="searchImage" destination="rBX-PO-DdA" id="vQt-Hl-lEG"/>
-                <outlet property="searchItemText" destination="Fsi-eZ-aHH" id="pyH-iY-Uo2"/>
+                <outlet property="customImageView" destination="rBX-PO-DdA" id="vQt-Hl-lEG"/>
+                <outlet property="titleLabel" destination="Fsi-eZ-aHH" id="pyH-iY-Uo2"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="113.83928571428571"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="rBX-PO-DdA">
+            <size key="intrinsicContentSize" width="994" height="1006"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Yarrow" width="994" height="1006"/>
         <image name="disclosureIndicator2" width="208" height="208"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

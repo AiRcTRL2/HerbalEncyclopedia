@@ -19,8 +19,12 @@ class AppContainer {
 
     /// Builds a plant view model
     func buildPlantViewModel() -> PlantViewModel {
-        let plantContainer: PlantContainer? = ModelParser.parseJson("herbs")
-        let plantViewModel = PlantViewModel(plants: plantContainer?.data ?? [])
+        let request: PlantRequest = PlantRequest()
+        request.configure(requestType: .file, urlOrFileName: "herbs")
+        
+        let data = request.fetchPlants()
+        
+        let plantViewModel = PlantViewModel(plants: data ?? [])
         
         return plantViewModel
     }
@@ -33,16 +37,18 @@ class AppContainer {
     /// Prepares the app for dictionary lookups by combining different dictionaries into one
     /// - Returns: A single dictionary
     static func buildLookupDictionary() -> [String: String] {
+        let request = DictionaryRequest()
+        
         var dictionaries = [[String: String]]()
         // parse all dictionaries available
         for dictionaryFilename in LookupDictionaryFilenameEnums.allCases {
-            let dictionary: DictionaryContainer? = ModelParser.parseJson(dictionaryFilename.rawValue)
+            let dictionary = request.fetchDictionary(url: dictionaryFilename.rawValue)
             
             guard dictionary != nil else {
                 continue
             }
             
-            dictionaries.append(dictionary!.data)
+            dictionaries.append(dictionary!)
         }
         
         // flatten and return the dictionaries

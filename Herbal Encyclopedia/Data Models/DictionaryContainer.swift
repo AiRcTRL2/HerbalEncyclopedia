@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Model used for parsing JSON dictionaries
 struct DictionaryContainer: Codable {
     let data: [String: String]
 }

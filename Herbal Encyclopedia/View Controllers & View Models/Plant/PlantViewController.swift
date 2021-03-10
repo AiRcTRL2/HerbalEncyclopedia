@@ -113,16 +113,14 @@ extension PlantViewController: UITableViewDelegate, UITableViewDataSource {
             default:
                 // For all other rows, label and description cell applies.
                 // account for above two cells not contained within datasourcce list
-                let adjustedIndex = indexPath.row - 2
+                let adjustedIndex = IndexPath(row: indexPath.row-2, section: indexPath.section)
 
                 // Fetch the cell data
-                let spotlightItem = plantViewModel?.tableViewRepresentable[adjustedIndex]
-                
-                guard let spotlightItemUnwrapped = spotlightItem  else {
+                guard let spotlightItem = plantViewModel?.tableViewRepresentable[adjustedIndex.row]  else {
                     return UITableViewCell()
                 }
                 
-                let labelAndDescCell = buildSpotlightItemCell(indexPath: indexPath, spotlightItem: spotlightItemUnwrapped, delegate: self)
+                let labelAndDescCell = buildSpotlightItemCell(indexPath: adjustedIndex, spotlightItem: spotlightItem, delegate: self)
                 
                 return labelAndDescCell
                 
@@ -139,19 +137,16 @@ extension PlantViewController: UITableViewDelegate, UITableViewDataSource {
     ///   - delegate: The responder to actions from the cell
     /// - Returns: A configured LabelAndDescriptionCell
     func buildSpotlightItemCell(indexPath: IndexPath, spotlightItem: PlantSpotlightItem, delegate: LabelAndDescriptionCellDelegate) -> LabelAndDescriptionCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: ReuseIDs.labelAndDescriptionCell) as! LabelAndDescriptionCell
         
         // configure the cell text
-        cell.configureText(
-            spotlightItem.title,
-            spotlightItem.text
+        cell.configure(
+            indexPath: indexPath,
+            spotlightItem: spotlightItem,
+            delegate: self
         )
         
-        // set the disclosur indicator to on or off
-        cell.configureDisclosureIndicator(spotlightItem.isExpansible)
-        
-        cell.indexPath = indexPath
-        cell.delegate = self
         cell.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         
         return cell
@@ -169,19 +164,21 @@ extension PlantViewController: LabelAndDescriptionCellDelegate {
     /// - Parameter indexPath: The tableView position of the tapped cell
     func navigateForwardPressed(indexPath: IndexPath) {
         if indexPath.row > 1 {
-            let cell = tableView.cellForRow(at: indexPath) as! LabelAndDescriptionCell
-            
-            let vc = storyboard?.instantiateViewController(withIdentifier: SegueIDs.descriptorsVC) as! DefinitionsViewController
-            
-            guard let plant = plantViewModel?.spotlightPlant?.savedPlant else {
+            guard
+                let spotlightItem = plantViewModel?.tableViewRepresentable[indexPath.row],
+                let plant = plantViewModel?.spotlightPlant?.savedPlant else {
                 return
             }
             
-            vc.descriptorViewModel = viewModelFactory?.buildDescriptorViewModel(
-                pageTitle: cell.title.text ?? "",
-                titlesNeedingDescriptions: cell.descriptionList,
-                plant: plant
-            )
+            let vc = storyboard?.instantiateViewController(withIdentifier: SegueIDs.descriptorsVC) as! DefinitionsViewController
+            
+            vc.descriptorViewModel = viewModelFactory?.buildDescriptorViewModel()
+            vc.descriptorViewModel?
+                .configure(
+                    pageTitle: spotlightItem.title,
+                    definitionHeadings: spotlightItem.text,
+                    describedPlant: plant
+                )
                         
             navigationController?.pushViewController(vc, animated: true)
             
